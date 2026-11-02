@@ -38,6 +38,10 @@
   {
    "type": "post-processing",
    "text": "Q: \"what was the average amount spent by amazon on their three largest acquisitions to date?\" Gold: \"~$8.68 billion\". Evaluator: correct (max score 0.98). Standard RAG: \"To calculate the average amount spent on the three largest acquisitions, we need more specific information about which three acquisitions we\". Corrective RAG: \"To calculate the average amount spent on the three largest acquisitions, we need more specific information about which three acquisitions we\". Diagnosis: evaluator over-confident."
+  },
+  {
+   "type": "comparison",
+   "text": "Q: \"who has a longer streak of consecutive number one hits, ariana grande or taylor swift?\" Gold: \"ariana grande has a longer streak of consecutive number one hits than taylor swift, with her first seven singles reaching number one on the billboard hot 100 chart, while taylor swift's streak of consecutive number one hits stopped at four.\". Evaluator: correct (max score 0.97). Standard RAG: \"Taylor Swift\". Corrective RAG: \"Taylor Swift\". Diagnosis: comparison needs both facts; evidence covers one side."
   }
  ],
  "conclusion": [

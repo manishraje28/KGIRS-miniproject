@@ -86,6 +86,9 @@ add([i for i in a0.index if not a0.loc[i, CR] and TR[i]["label"] != "correct" an
 add([i for i in a0.index if not a0.loc[i, CR] and meta.loc[i, "qtype"] == "false_premise" and TR[i]["label"] == "correct"], "false premise accepted")
 add([i for i in a0.index if not a0.loc[i, CR] and TR[i]["label"] == "correct" and meta.loc[i, "qtype"] in ("aggregation", "multi-hop", "post-processing")], "reasoning over evidence")
 add([i for i in a0.index if not a0.loc[i, CR] and TR[i]["label"] == "correct" and i not in [p for p, _ in picked]], "evaluator over-confident")
+add([i for i in a0.index if not a0.loc[i, CR] and meta.loc[i, "qtype"] == "comparison"], "comparison needs both facts; evidence covers one side")
+add([i for i in a0.index if not a0.loc[i, CR] and meta.loc[i, "qtype"] == "simple_w_condition"], "condition (date/time) ignored")
+picked = picked[:5]
 fails = []
 for i, why in picked:
     t = TR[i]; facts = (t.get("kg_facts") or [])[:1]
