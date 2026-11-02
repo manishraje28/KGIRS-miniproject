@@ -1,0 +1,8 @@
+stage,time_s,prompt_tokens,generated_tokens,per_question_tokens
+HTML parsing + chunking,62.4,0,0,0.0
+BGE-small embedding + retrieval,121.0,0,0,0.0
+Evaluator (BGE-reranker-base),25.9,0,0,0.0
+KG lookup (entity extraction + Wikidata),210.5,2699,209,15.0
+Generation: No retrieval,171.6,74862,4881,133.0
+Generation: Standard RAG (top-5),588.9,138362,2202,703.0
+Generation: Corrective RAG + KG fallback,579.0,121401,2156,618.0

@@ -1,0 +1,10 @@
+type,pool,sample
+post-processing,12,9
+simple_w_condition,40,29
+set,25,18
+simple,77,56
+aggregation,32,24
+comparison,31,23
+false_premise,31,23
+multi-hop,24,18
+TOTAL,272,200

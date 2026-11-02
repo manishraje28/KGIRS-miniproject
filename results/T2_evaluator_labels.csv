@@ -1,0 +1,6 @@
+,count,share %
+correct,165,82.5
+ambiguous,18,9.0
+incorrect,17,8.5
+KG fallback (ambiguous+incorrect),35,17.5
+KG entity found (of fallbacks),29,82.9

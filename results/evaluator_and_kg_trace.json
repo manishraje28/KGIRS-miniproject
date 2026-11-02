@@ -1,0 +1,3528 @@
+[
+ {
+  "interaction_id": "8d194198-f9a6-4988-a509-d3c138af56a6",
+  "query": "who won the oscar best actor in 2019?",
+  "answer": "rami malek",
+  "question_type": "simple",
+  "label": "correct",
+  "ev_scores": [
+   0.9976179003715515,
+   0.9976179003715515,
+   0.997296154499054,
+   0.997296154499054,
+   0.9997547268867493
+  ],
+  "kg_facts": []
+ },
+ {
+  "interaction_id": "3da17f00-c6ce-456c-a6ad-87852aac63a7",
+  "query": "how many songs were released by the artist who received best new artist in 57th grammy (2014)?",
+  "answer": "61",
+  "question_type": "multi-hop",
+  "label": "correct",
+  "ev_scores": [
+   0.030425583943724632,
+   0.11226524412631989,
+   0.10997740179300308,
+   0.4261890649795532,
+   0.81920325756073
+  ],
+  "kg_facts": []
+ },
+ {
+  "interaction_id": "7b9cdbae-3382-4aa1-922d-0bfd4cd6d90f",
+  "query": "what are the names of the 3 main characters in top gun?",
+  "answer": "the names of the 3 main characters in top gun are: pete \"maverick\" mitchell, charlie blackwood, and nick \"goose\" bradshaw.",
+  "question_type": "set",
+  "label": "correct",
+  "ev_scores": [
+   0.9889461398124695,
+   0.8765811324119568,
+   0.9203010201454163,
+   0.7863478064537048,
+   0.7863478064537048
+  ],
+  "kg_facts": []
+ },
+ {
+  "interaction_id": "9c129446-7051-45e8-bbc7-ac8c5c36cd52",
+  "query": "which of them started their career earlier, the offspring or fall out boy?",
+  "answer": "the offspring has started their career earlier.",
+  "question_type": "comparison",
+  "label": "correct",
+  "ev_scores": [
+   0.9216312170028687,
+   0.991951584815979,
+   0.28510019183158875,
+   0.9902088642120361,
+   0.9780477285385132
+  ],
+  "kg_facts": []
+ },
+ {
+  "interaction_id": "e29fc68b-b0ee-4e93-b5d3-692728256db9",
+  "query": "what's neu's open price last friday?",
+  "answer": "$625.92",
+  "question_type": "simple",
+  "label": "incorrect",
+  "ev_scores": [
+   0.002566817682236433,
+   0.002566817682236433,
+   0.002563089830800891,
+   0.002563089830800891,
+   0.0006277101929299533
+  ],
+  "kg_entities": [
+   "Neu"
+  ],
+  "kg_facts": []
+ },
+ {
+  "interaction_id": "994eda93-4586-4e9c-9617-97b2739fdec1",
+  "query": "what's the energy output of ktck (am) powered at night?",
+  "answer": "5,000 watts",
+  "question_type": "simple_w_condition",
+  "label": "correct",
+  "ev_scores": [
+   0.9869842529296875,
+   0.010560514405369759,
+   0.00317128817550838,
+   0.00317128817550838,
+   0.006282872520387173
+  ],
+  "kg_facts": []
+ },
+ {
+  "interaction_id": "766f48ad-5bfe-4d10-bda1-f4977859ea35",
+  "query": "what's forty's earnings per share?",
+  "answer": "i don't know",
+  "question_type": "simple",
+  "label": "correct",
+  "ev_scores": [
+   0.10076989978551865,
+   0.10076989978551865,
+   0.11158629506826401,
+   0.11158629506826401,
+   0.8726215958595276
+  ],
+  "kg_facts": []
+ },
+ {
+  "interaction_id": "1c6e396c-4153-4efd-8b23-e63d304f9d17",
+  "query": "what was the highest stock price of frsh on a daily basis this week?",
+  "answer": "$20.81",
+  "question_type": "simple",
+  "label": "correct",
+  "ev_scores": [
+   0.5872819423675537,
+   0.6491419076919556,
+   0.8940022587776184,
+   0.9441081881523132,
+   0.8950362205505371
+  ],
+  "kg_facts": []
+ },
+ {
+  "interaction_id": "a0681934-1a69-4493-93ae-e746fc682426",
+  "query": "who among patricia place and lana clarkson is younger?",
+  "answer": "lana clarkson",
+  "question_type": "comparison",
+  "label": "incorrect",
+  "ev_scores": [
+   0.014261802658438683,
+   0.07579275220632553,
+   0.044714901596307755,
+   0.0021824566647410393,
+   0.05540115386247635
+  ],
+  "kg_entities": [
+   "Patricia Place",
+   "Lana Clarkson"
+  ],
+  "kg_facts": []
+ },
+ {
+  "interaction_id": "8d54e262-5c08-48e2-966c-c45845287c07",
+  "query": "which etf had a higher number of shares traded on the day before yesterday, clsk or bksy?",
+  "answer": "clsk",
+  "question_type": "comparison",
+  "label": "incorrect",
+  "ev_scores": [
+   0.0009837435791268945,
+   0.00041864716331474483,
+   0.0015708018327131867,
+   0.000702667108271271,
+   0.0014012508327141404
+  ],
+  "kg_entities": [
+   "ETF",
+   "Clsk",
+   "Bksy"
+  ],
+  "kg_facts": [
+   "(Commando Luchtstrijdkrachten, short name, CLSK)",
+   "(Commando Luchtstrijdkrachten, country, Netherlands)",
+   "(Commando Luchtstrijdkrachten, military branch, Royal Netherlands Air Force)",
+   "(Commando Luchtstrijdkrachten, instance of, command)",
+   "(Commando Luchtstrijdkrachten, replaced by, Commando Lucht- en Ruimtestrijdkrachten)",
+   "(Commando Luchtstrijdkrachten, has use, aerial warfare)",
+   "(Commando Luchtstrijdkrachten, position held by head of the organization, Commander of the Royal Netherlands Air Force)"
+  ]
+ },
+ {
+  "interaction_id": "3befcde3-d119-46eb-a306-13e7e76ba834",
+  "query": "which company can i buy more shares with 1000 dollars based on yesterday's closing price, rlgt or  rbbn?",
+  "answer": "rbbn",
+  "question_type": "comparison",
+  "label": "ambiguous",
+  "ev_scores": [
+   0.10590439289808273,
+   0.09252092987298965,
+   0.04575717821717262,
+   0.049603354185819626,
+   0.16873623430728912
+  ],
+  "kg_entities": [
+   "rlgt",
+   "rbbn"
+  ],
+  "kg_facts": [
+   "(Neustrelitz Regional Vocational Training Centre, coordinate location, {'latitude': 53.3342957, 'longitude': 13.0949251, 'altitude': None, 'precision': 1e-07, 'globe': 'http://www.wikidata.org/entity/Q2'})",
+   "(Neustrelitz Regional Vocational Training Centre, country, Germany)",
+   "(Neustrelitz Regional Vocational Training Centre, instance of, vocational school)",
+   "(Neustrelitz Regional Vocational Training Centre, instance of, public school)",
+   "(Neustrelitz Regional Vocational Training Centre, street address, Hittenkoferstr. 28, 17235 Neustrelitz)",
+   "(Neustrelitz Regional Vocational Training Centre, has part(s), Neustrelitz Regional Vocational Training Centre, Demmin branch)",
+   "(Neustrelitz Regional Vocational Training Centre, field of work, Skilled metal worker)",
+   "(Neustrelitz Regional Vocational Training Centre, count of students, 1282)",
+   "(Neustrelitz Regional Vocational Training Centre, field of work, Gardener specialising in cemetery gardening)",
+   "(Neustrelitz Regional Vocational Training Centre, located in the administrative territorial entity, Neustrelitz)",
+   "(Neustrelitz Regional Vocational Training Centre, field of work, Gardener \u2013 Landscaping and horticulture)"
+  ]
+ },
+ {
+  "interaction_id": "9b66e82d-9c5c-4b16-b97a-5e13e1a9d9d1",
+  "query": "what album did kendrick lamar release in 2012, which included the songs \"swimming pools (drank)\" and \"bitch, don't kill my vibe\"?",
+  "answer": "kendrick lamar released the album \"good kid, m.a.a.d city\" in 2012, which included the songs \"swimming pools (drank)\" and \"bitch, don't kill my vibe\".",
+  "question_type": "simple_w_condition",
+  "label": "correct",
+  "ev_scores": [
+   0.994510293006897,
+   0.994510293006897,
+   0.9426447749137878,
+   0.9426447749137878,
+   0.9968764781951904
+  ],
+  "kg_facts": []
+ },
+ {
+  "interaction_id": "cb739056-b215-4c9e-8a3a-e7542ccc62a3",
+  "query": "what team will nantes play this week?",
+  "answer": "invalid question",
+  "question_type": "false_premise",
+  "label": "correct",
+  "ev_scores": [
+   0.7063568234443665,
+   0.7635643482208252,
+   0.7635643482208252,
+   0.5693017840385437,
+   0.5693017840385437
+  ],
+  "kg_facts": []
+ },
+ {
+  "interaction_id": "671bdf83-1afe-4ee8-bb24-135d010669e0",
+  "query": "which company in the nasdaq 100 index has the highest number of employees?",
+  "answer": "the company with the highest number of employees in the nasdaq 100 index is amazon, with over 1.5 million employees.",
+  "question_type": "multi-hop",
+  "label": "correct",
+  "ev_scores": [
+   0.9472280740737915,
+   0.9472280740737915,
+   0.5915077328681946,
+   0.5915077328681946,
+   0.8134199380874634
+  ],
+  "kg_facts": []
+ },
+ {
+  "interaction_id": "3b9e7284-41a2-43aa-af8d-df3a3da8bdef",
+  "query": "how many super bowl titles have the cowboys won?",
+  "answer": "the dallas cowboys have won five super bowl titles.",
+  "question_type": "aggregation",
+  "label": "correct",
+  "ev_scores": [
+   0.9911106824874878,
+   0.9984318614006042,
+   0.9990598559379578,
+   0.9938333034515381,
+   0.9854932427406311
+  ],
+  "kg_facts": []
+ },
+ {
+  "interaction_id": "8d1a9b59-172f-438f-a239-270ad485730f",
+  "query": "from the beginning of 2022 to it's end, how many games did indiana pacers win?",
+  "answer": "33",
+  "question_type": "aggregation",
+  "label": "correct",
+  "ev_scores": [
+   0.6889487504959106,
+   0.11375334113836288,
+   0.021908201277256012,
+   0.18730749189853668,
+   0.059740085154771805
+  ],
+  "kg_facts": []
+ },
+ {
+  "interaction_id": "e554740c-201a-4280-a644-d43523a97103",
+  "query": "where does amen thompson's brother play?",
+  "answer": "detroit pistons",
+  "question_type": "multi-hop",
+  "label": "correct",
+  "ev_scores": [
+   0.9634369611740112,
+   0.9998308420181274,
+   0.9738275408744812,
+   0.024016283452510834,
+   0.9903021454811096
+  ],
+  "kg_facts": []
+ },
+ {
+  "interaction_id": "0381f083-8c0d-4d65-bbf4-08d57ebf1582",
+  "query": "what was the average amount spent by amazon on their three largest acquisitions to date?",
+  "answer": "~$8.68 billion",
+  "question_type": "post-processing",
+  "label": "correct",
+  "ev_scores": [
+   0.9766871929168701,
+   0.9766871929168701,
+   0.9766871929168701,
+   0.9824563264846802,
+   0.33896252512931824
+  ],
+  "kg_facts": []
+ },
+ {
+  "interaction_id": "42274c34-9048-4e53-8b94-2c467bc5a0ed",
+  "query": "which animated movie was recognized with the best feature film oscar in 2013, can you name it?",
+  "answer": "brave",
+  "question_type": "simple",
+  "label": "correct",
+  "ev_scores": [
+   0.956861674785614,
+   0.9365336894989014,
+   0.9773763418197632,
+   0.9504413604736328,
+   0.9145572185516357
+  ],
+  "kg_facts": []
+ },
+ {
+  "interaction_id": "c34046db-727d-4633-b2aa-85ad0b579c4b",
+  "query": "which company in the s&p 500 index had the highest number of patents related to renewable energy from 2002 to 2022?",
+  "answer": "the company with the highest number of patents related to renewable energy in the s&p 500 index is general electric, with 15,640 patents related to renewable energy technologies.",
+  "question_type": "multi-hop",
+  "label": "ambiguous",
+  "ev_scores": [
+   0.03481992334127426,
+   0.5205496549606323,
+   0.0540713369846344,
+   0.18242408335208893,
+   0.07663165777921677
+  ],
+  "kg_entities": [
+   "Apple Inc",
+   "Google LLC",
+   "Microsoft Corporation"
+  ],
+  "kg_facts": [
+   "(Apple Inc., part of, Dow Jones Industrial Average)",
+   "(Apple Inc., industry, consumer electronics industry)",
+   "(Google, stock exchange, Nasdaq)",
+   "(Google, stock exchange, Nasdaq)",
+   "(Apple Inc., owned by, Berkshire Hathaway)",
+   "(Apple Inc., market capitalization, 2030000000000 Q4917)",
+   "(Apple Inc., market capitalization, 1000000000000 Q4917)",
+   "(Apple Inc., stock exchange, Nasdaq)",
+   "(Apple Inc., part of, Nasdaq-100)",
+   "(Apple Inc., owner of, Imagination Technologies)",
+   "(Apple Inc., market capitalization, 1044000000000 Q4917)",
+   "(Apple Inc., external auditor, Ernst & Young LLP)",
+   "(Apple Inc., Commons category, Apple Inc.)",
+   "(Apple Inc., industry, digital distribution)",
+   "(Apple Inc., owned by, BlackRock)"
+  ]
+ },
+ {
+  "interaction_id": "8f44d279-42b0-490f-ab04-24dd1a7a47f5",
+  "query": "what was henry rollins's age when he/she made an appearance in henry rollins: henry rollins goes to london?",
+  "answer": "33",
+  "question_type": "multi-hop",
+  "label": "correct",
+  "ev_scores": [
+   0.8997859358787537,
+   0.9399075508117676,
+   0.8837563395500183,
+   0.40697529911994934,
+   0.8534464836120605
+  ],
+  "kg_facts": []
+ },
+ {
+  "interaction_id": "9a294a8a-210a-4ed6-9c58-baa3e422a557",
+  "query": "what album did fergie release in 2006, which included the songs \"fergalicious\" and \"glamorous\"?",
+  "answer": "fergie released the album \"the dutchess\" in 2006, which included the songs \"fergalicious\" and \"glamorous\".",
+  "question_type": "simple_w_condition",
+  "label": "correct",
+  "ev_scores": [
+   0.9991714954376221,
+   0.9991714954376221,
+   0.9996119141578674,
+   0.9996119141578674,
+   0.9972471594810486
+  ],
+  "kg_facts": []
+ },
+ {
+  "interaction_id": "085c41f2-1a18-4dbf-9f6f-f415a0ec7689",
+  "query": "how many times has jennifer lawrence been named as one of the highest-paid actresses in the world by forbes?",
+  "answer": "jennifer lawrence has been named as one of the highest-paid actresses in the world by forbes twice, in 2015 and 2016.",
+  "question_type": "aggregation",
+  "label": "correct",
+  "ev_scores": [
+   0.8027989268302917,
+   0.9013554453849792,
+   0.9893949627876282,
+   0.9936466217041016,
+   0.9737561941146851
+  ],
+  "kg_facts": []
+ },
+ {
+  "interaction_id": "92795d27-1f14-4c36-8d3e-70009906e65f",
+  "query": "what was the total value of all initial public offerings in the americas for the technology sector in 2022?",
+  "answer": "the total value of all ipos in the americas for the technology sector was $1.6 billion in 2022.",
+  "question_type": "simple_w_condition",
+  "label": "ambiguous",
+  "ev_scores": [
+   0.01431412436068058,
+   0.48000770807266235,
+   0.03595082461833954,
+   0.172915980219841,
+   0.003495764220133424
+  ],
+  "kg_entities": [
+   "companies",
+   "films",
+   "songs"
+  ],
+  "kg_facts": [
+   "(enterprise, subclass of, company)",
+   "(enterprise, operator, entrepreneur)",
+   "(enterprise, subclass of, business)",
+   "(enterprise, properties for this type, P1454)",
+   "(enterprise, has use, business activity)",
+   "(enterprise, topic's main category, Category:Enterprises)",
+   "(enterprise, properties for this type, P2403)",
+   "(enterprise, instance of, statistical unit)",
+   "(enterprise, different from, Impresa)",
+   "(enterprise, properties for this type, P452)",
+   "(enterprise, partially coincident with, company)",
+   "(enterprise, described by source, Dictionnaire des biens communs)",
+   "(thin film, P31, Q122853628)",
+   "(enterprise, different from, business activity)",
+   "(enterprise, different from, Enterprise)"
+  ]
+ },
+ {
+  "interaction_id": "d188adfb-b174-4773-b391-1c22a8a2ffb4",
+  "query": "on which date did cpbi distribute dividends the first time",
+  "answer": "none of the days",
+  "question_type": "simple",
+  "label": "incorrect",
+  "ev_scores": [
+   0.0010686335153877735,
+   0.00662929518148303,
+   0.0048787593841552734,
+   0.009620054624974728,
+   0.0007159457309171557
+  ],
+  "kg_entities": [
+   "CPBI"
+  ],
+  "kg_facts": [
+   "(1,2,3,4,5-Pentakis(4-butylphenyl)-1,3-cyclopentadiene, canonical SMILES, CCCCC1=CC=C(C=C1)C2C(=C(C(=C2C3=CC=C(C=C3)CCCC)C4=CC=C(C=C4)CCCC)C5=CC=C(C=C5)CCCC)C6=CC=C(C=C6)CCCC)",
+   "(1,2,3,4,5-Pentakis(4-butylphenyl)-1,3-cyclopentadiene, chemical formula, C\u2085\u2085H\u2086\u2086)",
+   "(1,2,3,4,5-Pentakis(4-butylphenyl)-1,3-cyclopentadiene, mass, 726.516452112 Q483261)",
+   "(1,2,3,4,5-Pentakis(4-butylphenyl)-1,3-cyclopentadiene, subclass of, chemical compound)",
+   "(1,2,3,4,5-Pentakis(4-butylphenyl)-1,3-cyclopentadiene, instance of, type of chemical entity)"
+  ]
+ },
+ {
+  "interaction_id": "fe0020e6-9d28-46df-a1d7-0e6317a68ae3",
+  "query": "who has had more number one hits on the us billboard adult contemporary chart, adele or ed sheeran?",
+  "answer": "adele has had more number one hits on the us billboard adult contemporary chart than ed sheeran, with 6 number one hits compared to ed's 5.",
+  "question_type": "comparison",
+  "label": "correct",
+  "ev_scores": [
+   0.5950385928153992,
+   0.7096302509307861,
+   0.42673343420028687,
+   0.39000579714775085,
+   0.01116745825856924
+  ],
+  "kg_facts": []
+ },
+ {
+  "interaction_id": "fd3e847c-5742-46fd-be45-3a07189f226a",
+  "query": "who finished in second the year max verstappen won his first championship?",
+  "answer": "lewis hamilton",
+  "question_type": "multi-hop",
+  "label": "correct",
+  "ev_scores": [
+   0.8148819208145142,
+   0.9947176575660706,
+   0.9689562320709229,
+   0.5778557062149048,
+   0.7884971499443054
+  ],
+  "kg_facts": []
+ },
+ {
+  "interaction_id": "7fc281db-b2fc-4dc9-852a-ee6555d997f9",
+  "query": "what was the global box office revenue for caught up?",
+  "answer": "6754484",
+  "question_type": "simple",
+  "label": "incorrect",
+  "ev_scores": [
+   0.036706261336803436,
+   0.036706261336803436,
+   0.036706261336803436,
+   0.0018320567905902863,
+   0.011712449602782726
+  ],
+  "kg_entities": [
+   "Global Box Office Revenue"
+  ],
+  "kg_facts": []
+ },
+ {
+  "interaction_id": "75d3f3df-7e97-4fab-8b90-ee995d50abc0",
+  "query": "who directed dave, can you tell me their name?",
+  "answer": "ivan reitman",
+  "question_type": "simple",
+  "label": "correct",
+  "ev_scores": [
+   0.988727331161499,
+   0.19592393934726715,
+   0.9784331321716309,
+   0.9552855491638184,
+   0.8174059987068176
+  ],
+  "kg_facts": []
+ },
+ {
+  "interaction_id": "d5f0763b-064e-4028-8c60-9351831c54f9",
+  "query": "in 1998, which movie was distinguished for its visual effects at the oscars?",
+  "answer": "titanic",
+  "question_type": "simple",
+  "label": "correct",
+  "ev_scores": [
+   0.633171796798706,
+   0.9768337607383728,
+   0.9847907423973083,
+   0.3493587374687195,
+   0.3493587374687195
+  ],
+  "kg_facts": []
+ },
+ {
+  "interaction_id": "7cceb5b0-8393-495a-b673-e2b776ad7743",
+  "query": "when did meta announce the release of the meta quest 4?",
+  "answer": "invalid question",
+  "question_type": "false_premise",
+  "label": "correct",
+  "ev_scores": [
+   0.9989707469940186,
+   0.9155400991439819,
+   0.9692317843437195,
+   0.5796138048171997,
+   0.9529567956924438
+  ],
+  "kg_facts": []
+ },
+ {
+  "interaction_id": "576253ad-254b-4ad4-b944-95e5520da3c5",
+  "query": "what teams made the nfl playoffs this year?",
+  "answer": "the san francisco 49ers, baltimore ravens, dallas cowboys, buffalo bills, detroit lions, kansas city chiefs, tampa bay buccaneers, houston texans, philadelphia eagles, cleveland browns, los angeles rams, miami dolphins, green bay packers, and pittsburgh steelers all made the playoffs in the 2023-2024 nfl season.",
+  "question_type": "set",
+  "label": "correct",
+  "ev_scores": [
+   0.9982377290725708,
+   0.9999665021896362,
+   0.9999665021896362,
+   0.9978932738304138,
+   0.9978932738304138
+  ],
+  "kg_facts": []
+ },
+ {
+  "interaction_id": "54061c08-7a4a-4fcf-afea-8a4b99fd5ca2",
+  "query": "when did the united states become the first country to successfully land on the moon?",
+  "answer": "invalid question",
+  "question_type": "false_premise",
+  "label": "correct",
+  "ev_scores": [
+   0.9868883490562439,
+   0.9504402279853821,
+   0.9977847933769226,
+   0.691839337348938,
+   0.9974259734153748
+  ],
+  "kg_facts": []
+ },
+ {
+  "interaction_id": "85e0c966-3661-4ea4-87cb-fe15ef8d3b40",
+  "query": "which five dow jones companies have been able to consistently report a profit margin of 60% or higher without having a significant amount of market share or pricing power?",
+  "answer": "invalid question",
+  "question_type": "false_premise",
+  "label": "incorrect",
+  "ev_scores": [
+   0.0020927744917571545,
+   0.0020927744917571545,
+   0.0020927744917571545,
+   0.002343402011319995,
+   0.002343402011319995
+  ],
+  "kg_entities": [
+   "Dow Jones Companies",
+   "Profit Margin",
+   "60%"
+  ],
+  "kg_facts": [
+   "(profit margin, instance of, financial measure)",
+   "(profit margin, said to be the same as, Q19978980)",
+   "(profit margin, instance of, financial ratio)",
+   "(profit margin, subclass of, financial ratio)",
+   "(profit margin, subclass of, financial measure)",
+   "(profit margin, subclass of, economic profit)",
+   "(profit margin, instance of, quotient)",
+   "(profit margin, different from, margin)",
+   "(profit margin, different from, margin)",
+   "(profit margin, different from, margin)",
+   "(60% keyboard, P31, Q59259613)",
+   "(60% keyboard, P279, Q1511356)",
+   "(60% keyboard, P373, 60% computer keyboards)",
+   "(60% keyboard, P5135, Q136142113)",
+   "(60% keyboard, P5136, Q136142106)"
+  ]
+ },
+ {
+  "interaction_id": "86b97205-b9cf-44e2-b19a-3623c95a9671",
+  "query": "which company in the nasdaq 100 index has the highest gross margin?",
+  "answer": "the company with the highest gross margin in the nasdaq 100 index is microsoft, with a gross margin of over 96%.",
+  "question_type": "multi-hop",
+  "label": "correct",
+  "ev_scores": [
+   0.642130970954895,
+   0.4425974488258362,
+   0.4425974488258362,
+   0.8436574339866638,
+   0.8436574339866638
+  ],
+  "kg_facts": []
+ },
+ {
+  "interaction_id": "6f6eaaa8-7acd-4def-9559-304188681b33",
+  "query": "is dead innocent one the original title of that movie?",
+  "answer": "invalid question",
+  "question_type": "false_premise",
+  "label": "correct",
+  "ev_scores": [
+   0.6266385912895203,
+   0.40208640694618225,
+   0.6397228240966797,
+   0.5779198408126831,
+   0.5444779992103577
+  ],
+  "kg_facts": []
+ },
+ {
+  "interaction_id": "182772fe-c27b-42b2-a105-383b5bff8917",
+  "query": "what pixar films were released after 2017?",
+  "answer": "onward, soul, luca, turning red, lightyear, elemental",
+  "question_type": "set",
+  "label": "correct",
+  "ev_scores": [
+   0.05301070958375931,
+   0.05301070958375931,
+   0.9620057344436646,
+   0.9620057344436646,
+   0.30152103304862976
+  ],
+  "kg_facts": []
+ },
+ {
+  "interaction_id": "6ca35f3c-94c5-4903-bae7-96c367651def",
+  "query": "how many world series titles have the san francisco giants won?",
+  "answer": "the san francisco giants have won 8 world series titles.",
+  "question_type": "aggregation",
+  "label": "correct",
+  "ev_scores": [
+   0.9992947578430176,
+   0.9992947578430176,
+   0.9993714690208435,
+   0.9993714690208435,
+   0.9976325035095215
+  ],
+  "kg_facts": []
+ },
+ {
+  "interaction_id": "8c8ab5df-3ede-4aa7-918f-c689b30de1b5",
+  "query": "why do sharks eat live whales?",
+  "answer": "invalid question",
+  "question_type": "false_premise",
+  "label": "correct",
+  "ev_scores": [
+   0.9991750121116638,
+   0.9990401864051819,
+   0.9936553239822388,
+   0.9967081546783447,
+   0.9911978840827942
+  ],
+  "kg_facts": []
+ },
+ {
+  "interaction_id": "1ab0e558-0ace-4264-b248-36161677cff9",
+  "query": "which dune movie has better music, 1984 or 2021?",
+  "answer": "the music for dune 2021 is more striking",
+  "question_type": "comparison",
+  "label": "correct",
+  "ev_scores": [
+   0.795802116394043,
+   0.795802116394043,
+   0.9927741289138794,
+   0.9803280234336853,
+   0.9803280234336853
+  ],
+  "kg_facts": []
+ },
+ {
+  "interaction_id": "80365e4f-795e-4039-8afb-b7a8e8d54285",
+  "query": "what was the average budget for all movies in the harry potter series?",
+  "answer": "$147,375,000",
+  "question_type": "post-processing",
+  "label": "correct",
+  "ev_scores": [
+   0.9986361861228943,
+   0.992055356502533,
+   0.9990111589431763,
+   0.9944688081741333,
+   0.9965271353721619
+  ],
+  "kg_facts": []
+ },
+ {
+  "interaction_id": "ad0871e9-657b-4d8a-8f8a-bcf1a5e9c066",
+  "query": "which company have larger market cap, mfd or allt?",
+  "answer": "allt",
+  "question_type": "comparison",
+  "label": "correct",
+  "ev_scores": [
+   0.7241123914718628,
+   0.7241123914718628,
+   0.6551598906517029,
+   0.6551598906517029,
+   0.5153035521507263
+  ],
+  "kg_facts": []
+ },
+ {
+  "interaction_id": "bff06e49-0be8-44f5-a42f-b4e5afa64c8b",
+  "query": "what teams are minor league affiliates of the boston red sox?",
+  "answer": "worcester red sox, portland sea dogs, greenville drive, salem red sox",
+  "question_type": "set",
+  "label": "correct",
+  "ev_scores": [
+   0.9974865913391113,
+   0.9961243271827698,
+   0.9961243271827698,
+   0.9996178150177002,
+   0.9996178150177002
+  ],
+  "kg_facts": []
+ },
+ {
+  "interaction_id": "41dea43b-d187-4844-b33a-a46e3879dd96",
+  "query": "how many locations were filmed in the bourne movie released in 2004?",
+  "answer": "the bourne supremacy was shot in 4 locations moscow, russia; berlin, germany; goa, india; and new york city, new york, usa.",
+  "question_type": "multi-hop",
+  "label": "correct",
+  "ev_scores": [
+   0.992743968963623,
+   0.320248007774353,
+   0.624612033367157,
+   0.7150325179100037,
+   0.44089651107788086
+  ],
+  "kg_facts": []
+ },
+ {
+  "interaction_id": "f3d7ef0a-e808-4c60-b5fd-12c7bce12e76",
+  "query": "what was the open price of inaqw on last tues?",
+  "answer": "$0.13",
+  "question_type": "simple",
+  "label": "correct",
+  "ev_scores": [
+   0.4067896604537964,
+   0.1993875801563263,
+   0.2996872067451477,
+   0.9255017638206482,
+   0.13437508046627045
+  ],
+  "kg_facts": []
+ },
+ {
+  "interaction_id": "751a824f-66f0-4c2b-abff-a24f7a140b77",
+  "query": "what film marked angelina jolie's directorial debut?",
+  "answer": "in the land of blood and honey released in 2011",
+  "question_type": "post-processing",
+  "label": "correct",
+  "ev_scores": [
+   0.9936988353729248,
+   0.8612427115440369,
+   0.9780293703079224,
+   0.6203025579452515,
+   0.9702970385551453
+  ],
+  "kg_facts": []
+ },
+ {
+  "interaction_id": "b331860d-d453-4dcc-9b00-9085621f9d25",
+  "query": "when did the current president of the us get married?",
+  "answer": "the current president of the us, joe biden, got married on june 17, 1977.",
+  "question_type": "multi-hop",
+  "label": "correct",
+  "ev_scores": [
+   0.3491363227367401,
+   0.6199221611022949,
+   0.26002222299575806,
+   0.7122393846511841,
+   0.27200934290885925
+  ],
+  "kg_facts": []
+ },
+ {
+  "interaction_id": "14b94080-a148-43c3-b4d1-38e173d9b6d7",
+  "query": "the 1984 maze game devil world has an amazing soundtrack. who composed it?",
+  "answer": "koji kondo, akito nakatsuka",
+  "question_type": "set",
+  "label": "correct",
+  "ev_scores": [
+   0.9746066331863403,
+   0.7786641716957092,
+   0.32719913125038147,
+   0.2771540880203247,
+   0.691327691078186
+  ],
+  "kg_facts": []
+ },
+ {
+  "interaction_id": "bebd3b75-933f-41cc-9406-387093c90bd4",
+  "query": "who has more kids, kim kardashian or khloe kardashian?",
+  "answer": "kim kardashian",
+  "question_type": "comparison",
+  "label": "correct",
+  "ev_scores": [
+   0.990267813205719,
+   0.987193763256073,
+   0.9927943348884583,
+   0.9878938794136047,
+   0.9420864582061768
+  ],
+  "kg_facts": []
+ },
+ {
+  "interaction_id": "4be4a317-47bb-482b-9d92-00a49cc658ea",
+  "query": "how many children does rihanna have?",
+  "answer": "2 sons",
+  "question_type": "simple",
+  "label": "correct",
+  "ev_scores": [
+   0.991585373878479,
+   0.9397556185722351,
+   0.9397556185722351,
+   0.7510820031166077,
+   0.9028677940368652
+  ],
+  "kg_facts": []
+ },
+ {
+  "interaction_id": "24dad42d-3f22-44cc-97b0-eec13daaf629",
+  "query": "what team will manchester utd go head-to-head against in their next match in eng-premier league?",
+  "answer": "sheffield utd",
+  "question_type": "simple_w_condition",
+  "label": "correct",
+  "ev_scores": [
+   0.3410007059574127,
+   0.9209198355674744,
+   0.8791403770446777,
+   0.989500105381012,
+   0.6871321797370911
+  ],
+  "kg_facts": []
+ },
+ {
+  "interaction_id": "ff20865f-b6d3-4348-88a8-e46d865191ca",
+  "query": "can you tell me the latest film that denis villeneuve has been involved in?",
+  "answer": "dune: part two",
+  "question_type": "simple_w_condition",
+  "label": "correct",
+  "ev_scores": [
+   0.8260981440544128,
+   0.6399394869804382,
+   0.9796765446662903,
+   0.6796718835830688,
+   0.8778920769691467
+  ],
+  "kg_facts": []
+ },
+ {
+  "interaction_id": "8c64872e-3f00-4ced-81be-4cbd7ffcf887",
+  "query": "what was the singer of the song that won song of the year in the 59th grammy (2016)?",
+  "answer": "adele",
+  "question_type": "multi-hop",
+  "label": "correct",
+  "ev_scores": [
+   0.9239175915718079,
+   0.8730640411376953,
+   0.8495864868164062,
+   0.9707537293434143,
+   0.7507224082946777
+  ],
+  "kg_facts": []
+ },
+ {
+  "interaction_id": "b5f7410a-0074-46e7-8c66-85db48b5644c",
+  "query": "how many minarets does imam reza shrine have?",
+  "answer": "12",
+  "question_type": "simple",
+  "label": "correct",
+  "ev_scores": [
+   0.9996716976165771,
+   0.9997127652168274,
+   0.9997127652168274,
+   0.9997127652168274,
+   0.9991011619567871
+  ],
+  "kg_facts": []
+ },
+ {
+  "interaction_id": "389f9ba7-846f-4276-a466-e83f7dfd4879",
+  "query": "who was responsible for initiating the construction of the badshahi mosque?",
+  "answer": "aurangzeb",
+  "question_type": "post-processing",
+  "label": "correct",
+  "ev_scores": [
+   0.9103094339370728,
+   0.9842616319656372,
+   0.9992330074310303,
+   0.9993728995323181,
+   0.9183353781700134
+  ],
+  "kg_facts": []
+ },
+ {
+  "interaction_id": "f128b2c9-b4dd-4ff4-8baa-4493ac60caa6",
+  "query": "what was the average gross for all movies in the harry potter series in the uk?",
+  "answer": "\u00a362,895,676.6",
+  "question_type": "post-processing",
+  "label": "correct",
+  "ev_scores": [
+   0.358670175075531,
+   0.9529860019683838,
+   0.9647560715675354,
+   0.28384166955947876,
+   0.40557318925857544
+  ],
+  "kg_facts": []
+ },
+ {
+  "interaction_id": "3227eaec-c524-4c47-b025-38d5c9e5cd1b",
+  "query": "are tinos and karpathos in the same time zone in winter?",
+  "answer": "yes",
+  "question_type": "comparison",
+  "label": "correct",
+  "ev_scores": [
+   0.33618608117103577,
+   0.6026289463043213,
+   0.007529161870479584,
+   0.0258012767881155,
+   0.01710284687578678
+  ],
+  "kg_facts": []
+ },
+ {
+  "interaction_id": "ccfce63e-7228-4cc3-afb5-a7bd99aedf44",
+  "query": "which coast is better for surfing, east coast or west coast?",
+  "answer": "west coast is known to be better for surfing.",
+  "question_type": "comparison",
+  "label": "correct",
+  "ev_scores": [
+   0.9998538494110107,
+   0.9997751116752625,
+   0.9997382760047913,
+   0.9991872906684875,
+   0.9986580610275269
+  ],
+  "kg_facts": []
+ },
+ {
+  "interaction_id": "8acceb85-a002-4b9d-a6c5-3615666707d6",
+  "query": "what is the release date of ariana grande's upcoming album?",
+  "answer": "march 8th, 2024",
+  "question_type": "simple_w_condition",
+  "label": "correct",
+  "ev_scores": [
+   0.9996460676193237,
+   0.9996460676193237,
+   0.9990296363830566,
+   0.9990296363830566,
+   0.9990296363830566
+  ],
+  "kg_facts": []
+ },
+ {
+  "interaction_id": "8793c658-2d12-44da-be8d-4defd9a1d8d6",
+  "query": "who has sold more albums worldwide, michael jackson or elvis presley?",
+  "answer": "michael jackson, over 20m albums",
+  "question_type": "comparison",
+  "label": "correct",
+  "ev_scores": [
+   0.9981836676597595,
+   0.9979856014251709,
+   0.9969170093536377,
+   0.9973931312561035,
+   0.9933223128318787
+  ],
+  "kg_facts": []
+ },
+ {
+  "interaction_id": "8617a58c-73c6-4751-9a6e-4b6333b75afe",
+  "query": "how many actors did it take to star in both heavy metal: louder than life and metallica: cunning stunts?",
+  "answer": "2",
+  "question_type": "aggregation",
+  "label": "correct",
+  "ev_scores": [
+   0.1333151012659073,
+   0.03443055599927902,
+   0.5399128794670105,
+   0.6092225909233093,
+   0.6092225909233093
+  ],
+  "kg_facts": []
+ },
+ {
+  "interaction_id": "83199371-dc43-47e0-b286-5b0600195656",
+  "query": "which animal has a longer gestation period, whale or giraffe?",
+  "answer": "whale",
+  "question_type": "comparison",
+  "label": "correct",
+  "ev_scores": [
+   0.9983118772506714,
+   0.9983118772506714,
+   0.9983118772506714,
+   0.9984052777290344,
+   0.9984052777290344
+  ],
+  "kg_facts": []
+ },
+ {
+  "interaction_id": "ab7c3404-9eb3-46bb-963a-edd51af52709",
+  "query": "what was the date of the first dividend distribution for pev?",
+  "answer": "none of the days",
+  "question_type": "simple",
+  "label": "ambiguous",
+  "ev_scores": [
+   0.15944339334964752,
+   0.007488161325454712,
+   0.04208244010806084,
+   0.004109589848667383,
+   0.007748069707304239
+  ],
+  "kg_entities": [
+   "pev"
+  ],
+  "kg_facts": [
+   "(John Peverell Marley, date of death, 1964-02-02)",
+   "(John Peverell Marley, date of birth, 1899-00-00)",
+   "(John Peverell Marley, date of birth, 1901-08-14)",
+   "(John Peverell Marley, Commons category, J. Peverell Marley)",
+   "(John Peverell Marley, country of citizenship, United States)",
+   "(John Peverell Marley, cause of death, myocardial infarction)",
+   "(John Peverell Marley, related category, Q32702427)",
+   "(John Peverell Marley, birth name, John Peverell Marley)",
+   "(John Peverell Marley, given name, Peverell)",
+   "(John Peverell Marley, sex or gender, male)",
+   "(John Peverell Marley, place of birth, San Jose)",
+   "(John Peverell Marley, languages spoken, written or signed, English)",
+   "(John Peverell Marley, occupation, cinematographer)",
+   "(John Peverell Marley, instance of, human)",
+   "(John Peverell Marley, family name, Marley)"
+  ]
+ },
+ {
+  "interaction_id": "58a58aa6-c041-4f48-964a-9eb212cf64c6",
+  "query": "what was the average daily high of nbbk this week?",
+  "answer": "$13.95",
+  "question_type": "simple",
+  "label": "ambiguous",
+  "ev_scores": [
+   0.4816763699054718,
+   0.051004309207201004,
+   0.4103666841983795,
+   0.14592285454273224,
+   0.2161836326122284
+  ],
+  "kg_entities": [
+   "NBBK"
+  ],
+  "kg_facts": [
+   "(President of NBB, instance of, position)",
+   "(President of NBB, subclass of, party leader)",
+   "(President of NBB, organization directed by the office or position, Napar Buru Batzarra)",
+   "(President of NBB, position holder, Unai Hualde)",
+   "(President of NBB, female form of label, presidenta de l'NBB)",
+   "(President of NBB, country, Spain)"
+  ]
+ },
+ {
+  "interaction_id": "4d2ea739-26eb-41e4-8cca-21409d51615c",
+  "query": "on what date did alpine income property trust last pay out a dividend to its shareholders?",
+  "answer": "2023-12-13",
+  "question_type": "simple",
+  "label": "incorrect",
+  "ev_scores": [
+   0.0011960999108850956,
+   0.00210345396772027,
+   0.0023279893212020397,
+   0.004883090034127235,
+   0.00855051726102829
+  ],
+  "kg_entities": [
+   "Alpine Income Property Trust",
+   "shareholders"
+  ],
+  "kg_facts": [
+   "(Shareholders, platform, Microsoft Windows)",
+   "(Shareholders, distribution format, digital distribution)",
+   "(Shareholders, distributed by, Steam)",
+   "(Shareholders, instance of, video game)",
+   "(Shareholders, language of work or name, English)",
+   "(Shareholders, game mode, single-player video game)",
+   "(Shareholders, genre, strategy video game)",
+   "(Shareholders, genre, simulation video game)"
+  ]
+ },
+ {
+  "interaction_id": "639bbb5a-6ebe-4a93-a8cd-504277c434b5",
+  "query": "what is the native name of mount elbrus in kabardian?",
+  "answer": "\u04cf\u0443\u0430\u0449\u0445\u044c\u044d\u043c\u0430\u0445\u0443\u044d",
+  "question_type": "simple_w_condition",
+  "label": "correct",
+  "ev_scores": [
+   0.9725663065910339,
+   0.9872313141822815,
+   0.9961523413658142,
+   0.9961523413658142,
+   0.9958168864250183
+  ],
+  "kg_facts": []
+ },
+ {
+  "interaction_id": "3edb9509-f750-4d3a-9250-bb1b346da5bc",
+  "query": "how many people are in city high?",
+  "answer": "3",
+  "question_type": "simple",
+  "label": "correct",
+  "ev_scores": [
+   0.6624961495399475,
+   0.18108414113521576,
+   0.005332767032086849,
+   0.5781428217887878,
+   0.6965576410293579
+  ],
+  "kg_facts": []
+ },
+ {
+  "interaction_id": "6bbac7e1-15fe-45a2-8c42-3971e29a81c6",
+  "query": "where was beethoven born in the 90s?",
+  "answer": "invalid question",
+  "question_type": "false_premise",
+  "label": "correct",
+  "ev_scores": [
+   0.43554243445396423,
+   0.7340894937515259,
+   0.027509324252605438,
+   0.7672547698020935,
+   0.7672547698020935
+  ],
+  "kg_facts": []
+ },
+ {
+  "interaction_id": "c4a872a7-0e79-410f-9ad6-faac23133ada",
+  "query": "how many days did qwest corporation 6.75% notes due 2057 open higher during the current week?",
+  "answer": "0",
+  "question_type": "simple",
+  "label": "correct",
+  "ev_scores": [
+   0.49293649196624756,
+   0.6289830803871155,
+   0.3864701986312866,
+   0.9951960444450378,
+   0.964532196521759
+  ],
+  "kg_facts": []
+ },
+ {
+  "interaction_id": "4bb8a32d-cd90-4e1a-ae41-4cd2cd6e054b",
+  "query": "how many women billionaires are there in the united states as of 2023?",
+  "answer": "92 as of 2023",
+  "question_type": "aggregation",
+  "label": "correct",
+  "ev_scores": [
+   0.9920361638069153,
+   0.8969029784202576,
+   0.9881787896156311,
+   0.8034289479255676,
+   0.9666122198104858
+  ],
+  "kg_facts": []
+ },
+ {
+  "interaction_id": "cfc97149-a312-4c07-9ee8-bc858cdea8dd",
+  "query": "who made it to the semifinals of the most recent women's grand slam?",
+  "answer": "aryna sabalenka, elena rybakina, viktoria azarenka, magda linette",
+  "question_type": "aggregation",
+  "label": "correct",
+  "ev_scores": [
+   0.8996894359588623,
+   0.8798224329948425,
+   0.8733745813369751,
+   0.9776666760444641,
+   0.25803142786026
+  ],
+  "kg_facts": []
+ },
+ {
+  "interaction_id": "33d82fdc-836c-4e26-b78a-94a266627e05",
+  "query": "which academy awards category did the color purple win?",
+  "answer": "invalid question",
+  "question_type": "false_premise",
+  "label": "correct",
+  "ev_scores": [
+   0.8897897601127625,
+   0.9908939599990845,
+   0.9959261417388916,
+   0.9925941824913025,
+   0.9785524010658264
+  ],
+  "kg_facts": []
+ },
+ {
+  "interaction_id": "3cb9abcf-5643-4873-898e-1c3aa6eb43ec",
+  "query": "what was the total value of all initial public offerings (ipos) proceeds in the nasdaq in 2022?",
+  "answer": "the total value of all ipo proceeds in the nasdaq was $5.4 billion in 2022.",
+  "question_type": "simple_w_condition",
+  "label": "correct",
+  "ev_scores": [
+   0.9879648685455322,
+   0.7391542792320251,
+   0.4939407706260681,
+   0.9173380732536316,
+   0.9339644312858582
+  ],
+  "kg_facts": []
+ },
+ {
+  "interaction_id": "cffaaeea-fb6a-4efc-b1ce-ba8725d3ae65",
+  "query": "how many members are part of red hot chili pepper?",
+  "answer": "red hot chili peppers currently has 4 members.",
+  "question_type": "aggregation",
+  "label": "correct",
+  "ev_scores": [
+   0.9350406527519226,
+   0.2614521384239197,
+   0.7477279901504517,
+   0.7477279901504517,
+   0.991152822971344
+  ],
+  "kg_facts": []
+ },
+ {
+  "interaction_id": "8917d87c-3783-423d-9bcc-0bd6bd04cd9d",
+  "query": "who was the formidable oppinent that denver nuggets had to overcome in 2023-01-03 in a fierce battle?",
+  "answer": "invalid question",
+  "question_type": "false_premise",
+  "label": "incorrect",
+  "ev_scores": [
+   0.009214692749083042,
+   0.003955769818276167,
+   0.003955769818276167,
+   0.05057600513100624,
+   0.009496825747191906
+  ],
+  "kg_entities": [
+   "Denver Nuggets"
+  ],
+  "kg_facts": [
+   "(Denver Nuggets, instance of, basketball team)",
+   "(Denver Nuggets, sport, basketball)",
+   "(Denver Nuggets, headquarters location, Denver)",
+   "(Denver Nuggets, country, United States)",
+   "(Denver Nuggets, part of, Northwest Division)",
+   "(Denver Nuggets, league or competition, National Basketball Association)",
+   "(Denver Nuggets, head coach, David Adelman)",
+   "(Denver Nuggets, topic has template, Q115952489)",
+   "(Denver Nuggets, head coach, Mike Malone)",
+   "(Denver Nuggets, topic's main category, Category:Denver Nuggets)",
+   "(Denver Nuggets, inception, 1967-00-00)",
+   "(Denver Nuggets, social media followers, 1081923)",
+   "(Denver Nuggets, social media followers, 963331)",
+   "(Denver Nuggets, category for members of a team, Category:Denver Rockets players)",
+   "(Denver Nuggets, category for members of a team, Category:Denver Nuggets players)"
+  ]
+ },
+ {
+  "interaction_id": "6160de4d-d47f-4507-98a1-caa22c0c960c",
+  "query": "how many gold medals has michelle kwan won in the olympic games?",
+  "answer": "invalid question",
+  "question_type": "false_premise",
+  "label": "correct",
+  "ev_scores": [
+   0.9948145747184753,
+   0.9948145747184753,
+   0.9919838309288025,
+   0.970045804977417,
+   0.9665247201919556
+  ],
+  "kg_facts": []
+ },
+ {
+  "interaction_id": "67e8c5d4-3606-4928-9324-e487b23425ce",
+  "query": "how many times has lady gaga won the academy award for best original song?",
+  "answer": "lady gaga has won the academy award for best original song once, for her song \"shallow\" from the movie \"a star is born.\"",
+  "question_type": "simple_w_condition",
+  "label": "correct",
+  "ev_scores": [
+   0.9982454776763916,
+   0.9769898653030396,
+   0.9567996859550476,
+   0.9569604396820068,
+   0.9865809679031372
+  ],
+  "kg_facts": []
+ },
+ {
+  "interaction_id": "d53c0dc1-2965-498a-9083-139905f15fc7",
+  "query": "which player has the most career rebounds in the nba among players who have never been named defensive player of the year?",
+  "answer": "wilt chamberlain has the most career rebounds in the nba among players who have never been named defensive player of the year, with 23,924 rebounds.",
+  "question_type": "simple_w_condition",
+  "label": "correct",
+  "ev_scores": [
+   0.9666188955307007,
+   0.9666188955307007,
+   0.9748302102088928,
+   0.9748302102088928,
+   0.9896202683448792
+  ],
+  "kg_facts": []
+ },
+ {
+  "interaction_id": "865f54bf-2349-41c2-a1d4-e64b6d14a79b",
+  "query": "what was the worldwide box office earnings for price check??",
+  "answer": "6240",
+  "question_type": "simple",
+  "label": "incorrect",
+  "ev_scores": [
+   0.014129751361906528,
+   0.07617142051458359,
+   0.014231760986149311,
+   0.011452891863882542,
+   3.7289086321834475e-05
+  ],
+  "kg_entities": [
+   "Price Check"
+  ],
+  "kg_facts": [
+   "(Price Check, instance of, film)",
+   "(Price Check, original language of film or TV show, English)",
+   "(Price Check, genre, comedy film)",
+   "(Price Check, distributed by, IFC Films)",
+   "(Price Check, cast member, Eric Mabius)",
+   "(Price Check, country of origin, United States)",
+   "(Price Check, cast member, Cheyenne Jackson)",
+   "(Price Check, cast member, Parker Posey)",
+   "(Price Check, director, Michael Walker)",
+   "(Price Check, distribution format, video on demand)",
+   "(Price Check, title, Price Check)",
+   "(Price Check, publication date, 2012-01-01)",
+   "(Price Check, producer, Parker Posey)",
+   "(Price Check, producer, Eric Mabius)",
+   "(Price Check, duration, 92 Q7727)"
+  ]
+ },
+ {
+  "interaction_id": "66337316-94d9-49c2-b09e-8ea5f29a9925",
+  "query": "what country does the company behind spider-man 2 (2023 video game) call home?",
+  "answer": "usa",
+  "question_type": "multi-hop",
+  "label": "correct",
+  "ev_scores": [
+   0.9998145699501038,
+   0.9966391324996948,
+   0.9988528490066528,
+   0.9991902709007263,
+   0.9938748478889465
+  ],
+  "kg_facts": []
+ },
+ {
+  "interaction_id": "e7b12db6-b7ee-4efe-9998-5b9c992dea7a",
+  "query": "could you tell me which company has a higher market cap between hcvi and atak?",
+  "answer": "hcvi",
+  "question_type": "comparison",
+  "label": "incorrect",
+  "ev_scores": [
+   0.0051580737344920635,
+   0.008032362908124924,
+   0.0054701329208910465,
+   0.007702026050537825,
+   0.007318668533116579
+  ],
+  "kg_entities": [
+   "HCVI",
+   "ATAK"
+  ],
+  "kg_facts": [
+   "(ATAK, country of citizenship, Germany)",
+   "(ATAK, family name, Barber)",
+   "(ATAK, instance of, human)",
+   "(ATAK, name in native language, ATAK)",
+   "(ATAK, date of birth, 1967-08-10)",
+   "(ATAK, occupation, artist)",
+   "(ATAK, place of birth, Frankfurt (Oder))",
+   "(ATAK, pseudonym, ATAK)",
+   "(ATAK, employer, Hamburg University of Applied Sciences)",
+   "(ATAK, occupation, illustrator)",
+   "(HCVIVdb: The hepatitis-C IRES variation database, author, V\u00e1clav Vop\u00e1lensk\u00fd)",
+   "(ATAK, work location, Stockholm)",
+   "(ATAK, work location, Berlin)",
+   "(HCVIVdb: The hepatitis-C IRES variation database, author name string, Anas Khawaja)",
+   "(HCVIVdb: The hepatitis-C IRES variation database, issue, 1)"
+  ]
+ },
+ {
+  "interaction_id": "26f0bdf5-b188-4d90-a3bc-5f823a659d22",
+  "query": "when did the movie \"blade runner\" take place?",
+  "answer": "2019",
+  "question_type": "simple",
+  "label": "correct",
+  "ev_scores": [
+   0.9995044469833374,
+   0.5878139138221741,
+   0.9971930384635925,
+   0.8837317228317261,
+   0.874481737613678
+  ],
+  "kg_facts": []
+ },
+ {
+  "interaction_id": "779aa5b9-9bb6-4a08-a407-fb46bcc5a2f9",
+  "query": "what was the first \"talkie\" musical?",
+  "answer": "the jazz singer",
+  "question_type": "simple_w_condition",
+  "label": "correct",
+  "ev_scores": [
+   0.9912192225456238,
+   0.9904302954673767,
+   0.9837576746940613,
+   0.9483568668365479,
+   0.7600931525230408
+  ],
+  "kg_facts": []
+ },
+ {
+  "interaction_id": "4bc62eb4-678b-48cc-8e7c-ce5a524f0279",
+  "query": "what's the average board retainer fee for compaines on the s&p 500 index in communication services?",
+  "answer": "the average board retainer fee for s&p 500 companies in communication services is $120,000.",
+  "question_type": "multi-hop",
+  "label": "incorrect",
+  "ev_scores": [
+   0.00858539529144764,
+   0.01604280434548855,
+   0.0012591502163559198,
+   0.00011659869051072747,
+   0.0006798499962314963
+  ],
+  "kg_entities": [
+   "S&P 500",
+   "companies",
+   "Communication Services"
+  ],
+  "kg_facts": [
+   "(S&P 500, has part(s), WarnerMedia)",
+   "(S&P 500, country, United States)",
+   "(S&P 500, Commons category, S&P 500 Index)",
+   "(S&P 500, instance of, Enumeration of 500)",
+   "(S&P 500, instance of, stock market index)",
+   "(S&P 500, described by source, Yahoo! Finance)",
+   "(S&P 500, operator, S&P Dow Jones Indices)",
+   "(S&P 500, stock exchange, New York Stock Exchange)",
+   "(S&P 500, service entry, 1957-03-04)",
+   "(S&P 500, has part(s), McDonald's)",
+   "(S&P 500, topic's main category, Category:S&P 500 Index)",
+   "(S&P 500, stock exchange, Nasdaq)",
+   "(S&P 500, has part(s), The Walt Disney Company)",
+   "(S&P 500, named after, S&P Global Ratings)",
+   "(S&P 500, has list, list of S&P 500 companies)"
+  ]
+ },
+ {
+  "interaction_id": "152cd6c2-005f-4c8f-81ce-55fc7f13f477",
+  "query": "what are the five types of financial markets?",
+  "answer": "five types of financial markets are: stock market, bond market, foreign exchange market (forex), money market, commodities market",
+  "question_type": "set",
+  "label": "correct",
+  "ev_scores": [
+   0.9969550371170044,
+   0.9969550371170044,
+   0.9707339406013489,
+   0.9707339406013489,
+   0.9960677623748779
+  ],
+  "kg_facts": []
+ },
+ {
+  "interaction_id": "1bc664e0-1cc7-45f0-93e0-db126627df51",
+  "query": "which animated movie won the academy award for best animated feature film in 2012?",
+  "answer": "rango",
+  "question_type": "simple",
+  "label": "correct",
+  "ev_scores": [
+   0.998620867729187,
+   0.998620867729187,
+   0.9997832179069519,
+   0.9559937715530396,
+   0.919941782951355
+  ],
+  "kg_facts": []
+ },
+ {
+  "interaction_id": "38022c16-7f69-4e8d-ad22-8f55f2b5bc1c",
+  "query": "who has had more number one hits on the us billboard dance/mix show airplay chart, illenium or rihanna?",
+  "answer": "rihanna has had more number one hits on the us billboard dance/mix show airplay chart than illenium, with 12 number one hits compared to illenium's 5.",
+  "question_type": "comparison",
+  "label": "correct",
+  "ev_scores": [
+   0.831573486328125,
+   0.7426871657371521,
+   0.9581051468849182,
+   0.5969375371932983,
+   0.6583913564682007
+  ],
+  "kg_facts": []
+ },
+ {
+  "interaction_id": "260c5d09-cec1-4792-8438-c5317ae74891",
+  "query": "how long does a stock need to be held to make capital gains long term?",
+  "answer": "1 year",
+  "question_type": "simple",
+  "label": "correct",
+  "ev_scores": [
+   0.9536520838737488,
+   0.02998206950724125,
+   0.5663401484489441,
+   0.7600356936454773,
+   0.9294766783714294
+  ],
+  "kg_facts": []
+ },
+ {
+  "interaction_id": "f6aae15d-4e2a-41ba-b59b-85def368bf5c",
+  "query": "how many companies have a market capitalization of over $35 billion and have a ratio of research and development spending to total revenue of over 15%?",
+  "answer": "there are 19 companies that have a market capitalization of over $35 billion and have a ratio of research and development spending to total revenue of over 15%, such as amazon, alphabet (google) and meta.",
+  "question_type": "aggregation",
+  "label": "correct",
+  "ev_scores": [
+   0.912664532661438,
+   0.8015466928482056,
+   0.44856584072113037,
+   0.06984301656484604,
+   0.03580312430858612
+  ],
+  "kg_facts": []
+ },
+ {
+  "interaction_id": "5fa11978-d714-43c7-9cd1-a93d27f7a74f",
+  "query": "on which date did landp distribute dividends the first time",
+  "answer": "2023-06-26",
+  "question_type": "simple",
+  "label": "incorrect",
+  "ev_scores": [
+   0.13369347155094147,
+   0.1206275001168251,
+   0.0690758153796196,
+   0.0690758153796196,
+   0.0026450029108673334
+  ],
+  "kg_entities": [
+   "Landp"
+  ],
+  "kg_facts": [
+   "(LANDpedia, inception, 2006-07-02)",
+   "(LANDpedia, dissolved, abolished or demolished, 2013-02-00)",
+   "(LANDpedia, member of, Q107338637)",
+   "(LANDpedia, instance of, online encyclopedia)",
+   "(LANDpedia, instance of, MediaWiki wiki)",
+   "(LANDpedia, copyright status, copyrighted)",
+   "(LANDpedia, copyright license, Creative Commons Attribution-NonCommercial-ShareAlike)",
+   "(LANDpedia, main subject, Pok\u00e9mon)",
+   "(LANDpedia, software engine, MediaWiki)"
+  ]
+ },
+ {
+  "interaction_id": "5b95738a-82d6-48ee-93b2-053bce6badb1",
+  "query": "how many teams are in the nba g-league?",
+  "answer": "31",
+  "question_type": "simple",
+  "label": "correct",
+  "ev_scores": [
+   0.99940025806427,
+   0.9997658133506775,
+   0.9155060648918152,
+   0.037694141268730164,
+   0.037694141268730164
+  ],
+  "kg_facts": []
+ },
+ {
+  "interaction_id": "f9436dc7-d13f-410d-a98e-6230281ed52a",
+  "query": "on which date did rilyg distribute dividends last time",
+  "answer": "2024-01-11",
+  "question_type": "simple",
+  "label": "correct",
+  "ev_scores": [
+   0.9199261665344238,
+   0.2423056811094284,
+   0.945544958114624,
+   0.11203945428133011,
+   0.9711124300956726
+  ],
+  "kg_facts": []
+ },
+ {
+  "interaction_id": "9628a926-9f8b-446c-81d4-ebdc9bf54960",
+  "query": "how many games did anthony davis miss in the 2021-2022 regular season?",
+  "answer": "40",
+  "question_type": "post-processing",
+  "label": "correct",
+  "ev_scores": [
+   0.48326417803764343,
+   0.35004544258117676,
+   0.35004544258117676,
+   0.7136725187301636,
+   0.7136725187301636
+  ],
+  "kg_facts": []
+ },
+ {
+  "interaction_id": "3912e70f-5985-4aab-813d-15d50aaa0df3",
+  "query": "what was the closing price of vnom yesterday?",
+  "answer": "$35.78",
+  "question_type": "simple",
+  "label": "correct",
+  "ev_scores": [
+   0.9187222719192505,
+   0.33389812707901,
+   0.2503998875617981,
+   0.9957671165466309,
+   0.8875378370285034
+  ],
+  "kg_facts": []
+ },
+ {
+  "interaction_id": "31349920-bbc4-423d-a166-0af294c61490",
+  "query": "who has won more nba titles as a player and coach, steve kerr or phil jackson?",
+  "answer": "phil jackson has won more nba titles as a player and coach than steve kerr, with 2 championships as a player and 11 as head coach, while kerr has 9 championships as a player and coach.",
+  "question_type": "comparison",
+  "label": "correct",
+  "ev_scores": [
+   0.9997299313545227,
+   0.9786821603775024,
+   0.9903790950775146,
+   0.9892761707305908,
+   0.9907090663909912
+  ],
+  "kg_facts": []
+ },
+ {
+  "interaction_id": "c39337bb-0c15-418d-a07b-3aa9b5362891",
+  "query": "how many nfl teams play in a dome?",
+  "answer": "11",
+  "question_type": "simple",
+  "label": "correct",
+  "ev_scores": [
+   0.7668118476867676,
+   0.7668118476867676,
+   0.8463106751441956,
+   0.6555641293525696,
+   0.9192451238632202
+  ],
+  "kg_facts": []
+ },
+ {
+  "interaction_id": "cb8121e3-6af4-42cc-ab11-31fb0e786972",
+  "query": "i'm looking for the publisher of alan wake 2. can you help me find that information?",
+  "answer": "epic games publishing",
+  "question_type": "simple",
+  "label": "correct",
+  "ev_scores": [
+   0.981756329536438,
+   0.981756329536438,
+   0.9805387258529663,
+   0.9805387258529663,
+   0.09763703495264053
+  ],
+  "kg_facts": []
+ },
+ {
+  "interaction_id": "885981ae-1bfc-466e-9c1c-64919bb3a08d",
+  "query": "when did julia roberts win her first oscar?",
+  "answer": "2001",
+  "question_type": "simple",
+  "label": "correct",
+  "ev_scores": [
+   0.9893665909767151,
+   0.9962434768676758,
+   0.9912598729133606,
+   0.9124384522438049,
+   0.9449276924133301
+  ],
+  "kg_facts": []
+ },
+ {
+  "interaction_id": "b93bb968-3cc4-40c4-b11e-7fc5418cb9b5",
+  "query": "how many points did darius miles get for free throws in the game on 2000-11-02?",
+  "answer": "5",
+  "question_type": "aggregation",
+  "label": "correct",
+  "ev_scores": [
+   0.6945034265518188,
+   0.9461448192596436,
+   0.10297442227602005,
+   0.11093632131814957,
+   0.37184298038482666
+  ],
+  "kg_facts": []
+ },
+ {
+  "interaction_id": "5a369ef1-ed17-403e-a7c1-0b3dacc404c1",
+  "query": "who was the director for great moments in aviation?",
+  "answer": "beeban kidron",
+  "question_type": "simple",
+  "label": "correct",
+  "ev_scores": [
+   0.9956661462783813,
+   0.9994431138038635,
+   0.9982470273971558,
+   0.061386071145534515,
+   0.9980878233909607
+  ],
+  "kg_facts": []
+ },
+ {
+  "interaction_id": "1cb06dcb-918c-4a61-afa1-fc299f1ca4ce",
+  "query": "what are the last three albums released by shania twain?",
+  "answer": "up!, now, and queen of me",
+  "question_type": "set",
+  "label": "correct",
+  "ev_scores": [
+   0.991541862487793,
+   0.9300704002380371,
+   0.08593793958425522,
+   0.8397731184959412,
+   0.9701797962188721
+  ],
+  "kg_facts": []
+ },
+ {
+  "interaction_id": "1b43f36b-9830-4b04-b89a-85b3dfec9213",
+  "query": "how many siblings does celine dion have?",
+  "answer": "13",
+  "question_type": "aggregation",
+  "label": "correct",
+  "ev_scores": [
+   0.9997897744178772,
+   0.9999021291732788,
+   0.999047577381134,
+   0.9994033575057983,
+   0.9995317459106445
+  ],
+  "kg_facts": []
+ },
+ {
+  "interaction_id": "c60be6cb-3df0-4b80-bae1-220ff4f8f4d4",
+  "query": "when does atl\u00e9tico madrid have their next match in esp-la liga?",
+  "answer": "2024-03-17",
+  "question_type": "simple_w_condition",
+  "label": "correct",
+  "ev_scores": [
+   0.9043595790863037,
+   0.8362035155296326,
+   0.8853673934936523,
+   0.8591638803482056,
+   0.6400272250175476
+  ],
+  "kg_facts": []
+ },
+ {
+  "interaction_id": "8aa8579b-8fb8-4b4a-bc17-8f7f07e7fb22",
+  "query": "which animated movie won the academy award for best animated feature film in 2009?",
+  "answer": "wall-e",
+  "question_type": "simple",
+  "label": "correct",
+  "ev_scores": [
+   0.998009979724884,
+   0.999618649482727,
+   0.9985880255699158,
+   0.996885359287262,
+   0.9849430322647095
+  ],
+  "kg_facts": []
+ },
+ {
+  "interaction_id": "a7a2e2d2-2582-48e8-952a-8919489a4105",
+  "query": "how many times has kawhi leonard won the nba championship with the clippers?",
+  "answer": "invalid question",
+  "question_type": "false_premise",
+  "label": "correct",
+  "ev_scores": [
+   0.6664148569107056,
+   0.6664148569107056,
+   0.5429576635360718,
+   0.32889771461486816,
+   0.32889771461486816
+  ],
+  "kg_facts": []
+ },
+ {
+  "interaction_id": "cfc8a1a3-0450-4926-85e5-363ca4ed568b",
+  "query": "where did kefir come from?",
+  "answer": "north caucasia",
+  "question_type": "simple",
+  "label": "correct",
+  "ev_scores": [
+   0.9989038705825806,
+   0.9994040727615356,
+   0.9996082186698914,
+   0.9988679885864258,
+   0.9994680285453796
+  ],
+  "kg_facts": []
+ },
+ {
+  "interaction_id": "e4d0074b-af04-4acd-80b3-30745e6a0d16",
+  "query": "what is the name of ryan gosling's upcoming tequila brand?",
+  "answer": "invalid question",
+  "question_type": "false_premise",
+  "label": "ambiguous",
+  "ev_scores": [
+   0.10003262013196945,
+   0.12162663042545319,
+   0.46924877166748047,
+   0.15103650093078613,
+   0.013812449760735035
+  ],
+  "kg_entities": [
+   "Ryan Gosling",
+   "Tequila"
+  ],
+  "kg_facts": [
+   "(Ryan Gosling, given name, Ryan)",
+   "(Ryan Gosling, family name, Gosling)",
+   "(Ryan Gosling, genre, indie rock)",
+   "(Ryan Gosling, occupation, actor)",
+   "(Ryan Gosling, occupation, film actor)",
+   "(Ryan Gosling, languages spoken, written or signed, English)",
+   "(Ryan Gosling, country of citizenship, Canada)",
+   "(Ryan Gosling, genre, pop music)",
+   "(Ryan Gosling, name in native language, Ryan Thomas Gosling)",
+   "(Ryan Gosling, instrument, bass guitar)",
+   "(Ryan Gosling, sex or gender, male)",
+   "(Ryan Gosling, genre, folk rock)",
+   "(Ryan Gosling, instrument, guitar)",
+   "(Ryan Gosling, notable work, Q20856802)",
+   "(Ryan Gosling, occupation, television actor)"
+  ]
+ },
+ {
+  "interaction_id": "6e0d7196-a7c9-4510-b07b-d28398d19b89",
+  "query": "how many songs are on taylor swift's 1989 (taylor's version) album?",
+  "answer": "21 songs",
+  "question_type": "aggregation",
+  "label": "correct",
+  "ev_scores": [
+   0.9291980862617493,
+   0.7837494015693665,
+   0.9980202913284302,
+   0.9572563767433167,
+   0.9983118772506714
+  ],
+  "kg_facts": []
+ },
+ {
+  "interaction_id": "5210df0b-2b03-42c4-8766-82f4c06af208",
+  "query": "which player has the most consecutive stolen bases in mlb history without being caught since 1980?",
+  "answer": "vince coleman has the most consecutive stolen bases in mlb history without being caught, with 50 stolen bases.",
+  "question_type": "simple_w_condition",
+  "label": "ambiguous",
+  "ev_scores": [
+   0.5855095386505127,
+   0.4330592155456543,
+   0.3745565712451935,
+   0.44965919852256775,
+   0.4345063865184784
+  ],
+  "kg_entities": [
+   "player"
+  ],
+  "kg_facts": [
+   "(association football player, main Wikidata property, P14451)",
+   "(association football player, instance of, occupation)",
+   "(association football player, properties for this type, P1238)",
+   "(association football player, properties for this type, P2193)",
+   "(association football player, properties for this type, P1469)",
+   "(association football player, field of this occupation, men's association football)",
+   "(association football player, topic has template, Template:Infobox football biography)",
+   "(association football player, sport, association football)",
+   "(association football player, instance of, profession)",
+   "(association football player, field of this occupation, association football)",
+   "(association football player, ISCO-08 occupation class, 3421)",
+   "(association football player, part of, association football team)",
+   "(association football player, male form of label, Fu\u00dfballspieler)",
+   "(association football player, male form of label, Fussballspieler)",
+   "(association football player, subclass of, competitive player)"
+  ]
+ },
+ {
+  "interaction_id": "cc6e62de-70b0-437a-8887-3c435315f876",
+  "query": "can you name the members of the the bastard fairies group for me?",
+  "answer": "robin davey, yellow thunder woman",
+  "question_type": "simple",
+  "label": "incorrect",
+  "ev_scores": [
+   0.005291137378662825,
+   0.0008385485853068531,
+   7.688479672651738e-05,
+   0.0005621486343443394,
+   3.742163971764967e-05
+  ],
+  "kg_entities": [
+   "The main named entities in the question are:\n\n1. The Bastard Fairies Group\n\nThis is a company or organization",
+   "specifically a music band or collective"
+  ],
+  "kg_facts": []
+ },
+ {
+  "interaction_id": "8f8b7207-3e87-41b5-9928-b43112b7f7ba",
+  "query": "how many premium subscribers did spotify gain or lose from the beginning to end of the fiscal year 2022?",
+  "answer": "23 million subscribers",
+  "question_type": "post-processing",
+  "label": "correct",
+  "ev_scores": [
+   0.9978067278862,
+   0.9978067278862,
+   0.9948781728744507,
+   0.9948781728744507,
+   0.9953653812408447
+  ],
+  "kg_facts": []
+ },
+ {
+  "interaction_id": "fe805429-30d9-475f-8f22-0acb5670a57c",
+  "query": "how many different variations of retrievers exist?",
+  "answer": "there are six dog breeds that are considered retrievers.",
+  "question_type": "aggregation",
+  "label": "ambiguous",
+  "ev_scores": [
+   0.5590693950653076,
+   0.03106868267059326,
+   0.11240310966968536,
+   0.5646779537200928,
+   0.5646779537200928
+  ],
+  "kg_entities": [
+   "dogs"
+  ],
+  "kg_facts": [
+   "(dog, different from, Dog)",
+   "(dog, Commons category, Dogs)",
+   "(dog, different from, Can)",
+   "(dog, different from, Hund)",
+   "(dog, subclass of, pet)",
+   "(dog, category for the view of the item, Category:Views of dogs)",
+   "(dog, instance of, animal type)",
+   "(dog, topic's main category, Category:Dogs)",
+   "(dog, disjoint union of, list of values as qualifiers)",
+   "(dog, union of, list of values as qualifiers)",
+   "(dog, taxon name, Canis familiarus domesticus)",
+   "(dog, topic has template, Template:Domestic dog)",
+   "(dog, hashtag, doglover)",
+   "(dog, hashtag, dogs)",
+   "(dog, copyright status, public domain)"
+  ]
+ },
+ {
+  "interaction_id": "aa29b165-d6ac-423b-88a2-7a6ec06e0273",
+  "query": "what was the goal tally for metz in their most recent game in fra-ligue 1?",
+  "answer": "1",
+  "question_type": "simple_w_condition",
+  "label": "ambiguous",
+  "ev_scores": [
+   0.28804805874824524,
+   0.28804805874824524,
+   0.01755666360259056,
+   0.03771660104393959,
+   0.03771660104393959
+  ],
+  "kg_entities": [
+   "Metz",
+   "Fra-Ligue 1"
+  ],
+  "kg_facts": [
+   "(Metz, country, France)",
+   "(Metz, instance of, Q1549591)",
+   "(Metz, country, Q183)",
+   "(Metz, described by source, Q4114391)",
+   "(Metz, male population, 57099)",
+   "(Metz, population, 118634)",
+   "(Metz, population, 117619)",
+   "(Metz, country, Q43287)",
+   "(Metz, capital of, Moselle)",
+   "(Metz, instance of, Q484170)",
+   "(Metz, significant event, Q3485959)",
+   "(Metz, significant event, Q3485960)",
+   "(Metz, capital of, Q701697)",
+   "(Metz, capital of, Lorraine)",
+   "(Metz, described by source, Q602358)"
+  ]
+ },
+ {
+  "interaction_id": "c857db8a-b4b6-46db-af9f-cb360c1a621a",
+  "query": "what are the names of all the movies in the indiana jones franchise?",
+  "answer": "the names of the movies in the indiana jones franchise are \"raiders of the lost ark\", \"indiana jones and the temple of doom\", \"indiana jones and the last crusade\", \"indiana jones and the kingdom of the crystal skull\", and \"indiana jones and the dial of destiny\".",
+  "question_type": "set",
+  "label": "correct",
+  "ev_scores": [
+   0.9624446630477905,
+   0.9891181588172913,
+   0.9553026556968689,
+   0.9223706722259521,
+   0.9865715503692627
+  ],
+  "kg_facts": []
+ },
+ {
+  "interaction_id": "e4c20b39-4b27-460e-a2b2-473a577ea662",
+  "query": "when was sean strickland's first successful title defense?",
+  "answer": "invalid question",
+  "question_type": "false_premise",
+  "label": "correct",
+  "ev_scores": [
+   0.5726232528686523,
+   0.8222164511680603,
+   0.5392477512359619,
+   0.9886118769645691,
+   0.2427673488855362
+  ],
+  "kg_facts": []
+ },
+ {
+  "interaction_id": "255b57ed-6a4e-4bab-9bb7-b3e785f4dee3",
+  "query": "what's the name of the actress who played the role of a queen in the third season of the tv show \"the crown\"?",
+  "answer": "the actress who played the role of a queen in the third season of the tv show \"the crown\" is olivia colman. for her portrayal of queen elizabeth ii, she received a golden globe award and a primetime emmy award.",
+  "question_type": "multi-hop",
+  "label": "correct",
+  "ev_scores": [
+   0.9933316111564636,
+   0.9998130202293396,
+   0.2137756049633026,
+   0.2137756049633026,
+   0.9900446534156799
+  ],
+  "kg_facts": []
+ },
+ {
+  "interaction_id": "e234a416-5e87-4884-af79-4d67737d3524",
+  "query": "how many grammys has beyonc\u00e9 won throughout her career?",
+  "answer": "beyonc\u00e9 has won a total of 32 grammy awards.",
+  "question_type": "aggregation",
+  "label": "correct",
+  "ev_scores": [
+   0.9996576309204102,
+   0.9991993308067322,
+   0.9991993308067322,
+   0.9948683977127075,
+   0.9985346794128418
+  ],
+  "kg_facts": []
+ },
+ {
+  "interaction_id": "d6e4c5fe-2a44-474c-bc78-ec36d8a4642f",
+  "query": "how many acc teams made it to the 2023 ncaa men's basketball tournament?",
+  "answer": "5",
+  "question_type": "aggregation",
+  "label": "correct",
+  "ev_scores": [
+   0.9860413670539856,
+   0.9860413670539856,
+   0.9860939979553223,
+   0.9860939979553223,
+   0.8893125653266907
+  ],
+  "kg_facts": []
+ },
+ {
+  "interaction_id": "606485ff-517e-4d2e-b5c9-615364d9e613",
+  "query": "what's the name of the actress who played the role of rachel green's sister in the tv show \"friends\"?",
+  "answer": "the actresses who played the role of rachel green's sisters in the tv show \"friends\" were reese witherspoon and christina applegate.",
+  "question_type": "multi-hop",
+  "label": "correct",
+  "ev_scores": [
+   0.9992184638977051,
+   0.9977157115936279,
+   0.9670097827911377,
+   0.9993634819984436,
+   0.9809869527816772
+  ],
+  "kg_facts": []
+ },
+ {
+  "interaction_id": "be1cb85d-d2d8-43ed-b240-7210dfe1fc40",
+  "query": "what are the different product families from nvidia?",
+  "answer": "geforce, nvidia rtx, nforce, tesla, nvidia bluefield",
+  "question_type": "set",
+  "label": "correct",
+  "ev_scores": [
+   0.7487112879753113,
+   0.31568077206611633,
+   0.33527496457099915,
+   0.40513816475868225,
+   0.8726426362991333
+  ],
+  "kg_facts": []
+ },
+ {
+  "interaction_id": "9c3cbff7-32ab-41ee-a41a-ddf3b8ef5c6b",
+  "query": "how many times has lady gaga been credited with an acting role?",
+  "answer": "lady gaga currently has 48 acting credits.",
+  "question_type": "simple_w_condition",
+  "label": "correct",
+  "ev_scores": [
+   0.7632789611816406,
+   0.33683210611343384,
+   0.04190708324313164,
+   0.3557682931423187,
+   0.01489892229437828
+  ],
+  "kg_facts": []
+ },
+ {
+  "interaction_id": "90915ce8-4361-446a-88a8-2bcec2a7ebe0",
+  "query": "was the original title of that movie george wallace: one night stand?",
+  "answer": "yes",
+  "question_type": "simple",
+  "label": "ambiguous",
+  "ev_scores": [
+   0.025841040536761284,
+   0.025841040536761284,
+   0.025841040536761284,
+   0.4794965386390686,
+   0.4794965386390686
+  ],
+  "kg_entities": [
+   "George Wallace"
+  ],
+  "kg_facts": [
+   "(George Wallace, sex or gender, male)",
+   "(George Wallace, country of citizenship, United States)",
+   "(George Wallace, given name, George)",
+   "(George Wallace, occupation, lawyer)",
+   "(George Wallace, family name, Wallace)",
+   "(George Wallace, languages spoken, written or signed, English)",
+   "(George Wallace, instance of, human)",
+   "(George Wallace, occupation, boxer)",
+   "(George Wallace, writing language, English)",
+   "(George Wallace, sport, boxing)",
+   "(George Wallace, date of death, 1998-09-13)",
+   "(George Wallace, occupation, politician)",
+   "(George Wallace, different from, George Wallace)",
+   "(George Wallace, place of birth, Clio)",
+   "(George Wallace, name in native language, George Corley Wallace Jr.)"
+  ]
+ },
+ {
+  "interaction_id": "4b1899ad-46ed-43ef-9439-77c05049dd8f",
+  "query": "who won best new artist at the 61st grammy (2018)?",
+  "answer": "dua lipa",
+  "question_type": "simple_w_condition",
+  "label": "correct",
+  "ev_scores": [
+   0.9901589751243591,
+   0.9485957622528076,
+   0.9148067831993103,
+   0.9629179239273071,
+   0.9629179239273071
+  ],
+  "kg_facts": []
+ },
+ {
+  "interaction_id": "49784e6e-1633-49aa-a947-a0b9e847fab2",
+  "query": "how many american music awards has taylor swift won throughout her career?",
+  "answer": "40 american music awards",
+  "question_type": "aggregation",
+  "label": "correct",
+  "ev_scores": [
+   0.9446392059326172,
+   0.9446392059326172,
+   0.9974260926246643,
+   0.9974260926246643,
+   0.8825126886367798
+  ],
+  "kg_facts": []
+ },
+ {
+  "interaction_id": "1744bcb4-6bb8-48eb-a120-c8e6f5745e4f",
+  "query": "what songs did the bonnie raitt publish in 2020?",
+  "answer": "cryin' mercy (live, sausalito '73)",
+  "question_type": "simple",
+  "label": "correct",
+  "ev_scores": [
+   0.07052624970674515,
+   0.5445266962051392,
+   0.7874293923377991,
+   0.9406323432922363,
+   0.10896092653274536
+  ],
+  "kg_facts": []
+ },
+ {
+  "interaction_id": "cad5cb70-f29b-4d56-bf05-d457b35beb16",
+  "query": "can you list isla fisher's kids?",
+  "answer": "isla fisher has 3 kids: olive, elula, and montgomery.",
+  "question_type": "set",
+  "label": "correct",
+  "ev_scores": [
+   0.8629183769226074,
+   0.6664454936981201,
+   0.8271322250366211,
+   0.6423624157905579,
+   0.8947434425354004
+  ],
+  "kg_facts": []
+ },
+ {
+  "interaction_id": "15ec82e1-c5f1-4194-813f-fc465e365b93",
+  "query": "who has had more number one hits on the us billboard r&b/hip-hop songs chart, janet jackson or aretha franklin?",
+  "answer": "aretha franklin has had more number one hits on the us billboard r&b/hip-hop songs chart than janet jackson, with 20 number one hits compared to janet's 16.",
+  "question_type": "comparison",
+  "label": "correct",
+  "ev_scores": [
+   0.05158386752009392,
+   0.837884247303009,
+   0.837884247303009,
+   0.20397283136844635,
+   0.08838624507188797
+  ],
+  "kg_facts": []
+ },
+ {
+  "interaction_id": "8fda5f3e-e92e-4040-a330-4d41a864273b",
+  "query": "in 2011, which movie was awarded the best documentary feature honor at the oscars?",
+  "answer": "inside job",
+  "question_type": "simple",
+  "label": "correct",
+  "ev_scores": [
+   0.5332159399986267,
+   0.7206431031227112,
+   0.8751482963562012,
+   0.9118487238883972,
+   0.9108803868293762
+  ],
+  "kg_facts": []
+ },
+ {
+  "interaction_id": "735b8f30-3e0b-488f-a541-e4980aeabade",
+  "query": "for this week, what was the average daily high stock price of flnt?",
+  "answer": "$0.55",
+  "question_type": "simple",
+  "label": "correct",
+  "ev_scores": [
+   0.9619268178939819,
+   0.9868185520172119,
+   0.7201784253120422,
+   0.9881921410560608,
+   0.9835585951805115
+  ],
+  "kg_facts": []
+ },
+ {
+  "interaction_id": "339e5264-c986-4c31-a381-06e9f47be20d",
+  "query": "which stock has better pe: tgaaw or  edbl.",
+  "answer": "edbl",
+  "question_type": "comparison",
+  "label": "incorrect",
+  "ev_scores": [
+   0.024009371176362038,
+   0.024009371176362038,
+   0.0028275465592741966,
+   0.0028275465592741966,
+   0.0018733212491497397
+  ],
+  "kg_entities": [
+   "stock"
+  ],
+  "kg_facts": [
+   "(Stockholm, related category, Category:Stockholm-related lists)",
+   "(Stockholm, Commons category, Stockholm)",
+   "(Stockholm, local dialing code, 08)",
+   "(Stockholm, inception, 1187-00-00)",
+   "(Stockholm, category for the view of the item, Category:Views of Stockholm)",
+   "(Stockholm, topic's main category, Category:Stockholm)",
+   "(Stockholm, has characteristic, Q15210366)",
+   "(Stockholm, native label, Stockholm)",
+   "(Stockholm, category of associated people, Category:People from Stockholm)",
+   "(Stockholm, official language, Swedish)",
+   "(Stockholm, area, 187.16 Q712226)",
+   "(Stockholm, described by source, Brockhaus and Efron Encyclopedic Dictionary)",
+   "(Stockholm, continent, Europe)",
+   "(Stockholm, nickname, Nordens Venedig)",
+   "(Stockholm, postal code, 100\u00a000\u2013200\u00a000)"
+  ]
+ },
+ {
+  "interaction_id": "82d831a7-b69b-464a-b296-571921da5c29",
+  "query": "what price did the ppg industries open today?",
+  "answer": "$140.47",
+  "question_type": "simple",
+  "label": "correct",
+  "ev_scores": [
+   0.892718493938446,
+   0.892718493938446,
+   0.2597971260547638,
+   0.2597971260547638,
+   0.21799339354038239
+  ],
+  "kg_facts": []
+ },
+ {
+  "interaction_id": "65a07837-fb49-45d0-8231-f2a58e1cce2a",
+  "query": "in 2022, did brooklyn nets win more games than boston celtics?",
+  "answer": "no",
+  "question_type": "comparison",
+  "label": "correct",
+  "ev_scores": [
+   0.6396337151527405,
+   0.5062144994735718,
+   0.6579263210296631,
+   0.834220290184021,
+   0.9778792262077332
+  ],
+  "kg_facts": []
+ },
+ {
+  "interaction_id": "297af9ae-a4dd-4a12-b7e8-e2355f4aaf5f",
+  "query": "which baseball players have hit at least 700 home runs in their career?",
+  "answer": "hank aaron, babe ruth, albert pujols, and barry bonds have all hit at least 700 home runs in their careers.",
+  "question_type": "set",
+  "label": "correct",
+  "ev_scores": [
+   0.9995139837265015,
+   0.9990960359573364,
+   0.9991395473480225,
+   0.9958599209785461,
+   0.9962887763977051
+  ],
+  "kg_facts": []
+ },
+ {
+  "interaction_id": "67616e0e-2edb-47c1-a4a2-0bdb35df9334",
+  "query": "can you provide me with the most recent stock price of royalty pharma?",
+  "answer": "$30.91",
+  "question_type": "simple",
+  "label": "incorrect",
+  "ev_scores": [
+   0.0007922567892819643,
+   0.0007922567892819643,
+   0.00025069870753213763,
+   0.00025069870753213763,
+   0.0008180095464922488
+  ],
+  "kg_entities": [
+   "Royalty Pharma"
+  ],
+  "kg_facts": [
+   "(Royalty Pharma, country, United States)",
+   "(Royalty Pharma, instance of, business)",
+   "(Royalty Pharma, headquarters location, New York City)",
+   "(Royalty Pharma, founder, Rory Riggs)"
+  ]
+ },
+ {
+  "interaction_id": "02099cbc-15f8-479a-88f7-e56b5721c6dc",
+  "query": "what is the name of millie bobby brown's upcoming fashion line?",
+  "answer": "invalid question",
+  "question_type": "false_premise",
+  "label": "correct",
+  "ev_scores": [
+   0.9592890739440918,
+   0.9592890739440918,
+   0.967343807220459,
+   0.967343807220459,
+   0.9740360379219055
+  ],
+  "kg_facts": []
+ },
+ {
+  "interaction_id": "a957e475-ac26-42c5-9687-89ed07d61794",
+  "query": "how many shares of united rentals stock can i buy with $100?",
+  "answer": "0",
+  "question_type": "simple_w_condition",
+  "label": "correct",
+  "ev_scores": [
+   0.8554920554161072,
+   0.11212301254272461,
+   0.9338788390159607,
+   0.15332923829555511,
+   0.5914368033409119
+  ],
+  "kg_facts": []
+ },
+ {
+  "interaction_id": "157efdf5-528f-4ac6-9be4-dec9109cfc33",
+  "query": "who's the younger actor between amber tamblyn and ja rule?",
+  "answer": "amber tamblyn",
+  "question_type": "comparison",
+  "label": "incorrect",
+  "ev_scores": [
+   0.13250824809074402,
+   0.05079799145460129,
+   0.1034950539469719,
+   0.1034950539469719,
+   0.1034950539469719
+  ],
+  "kg_entities": [
+   "Amber Tamblyn",
+   "Ja Rule"
+  ],
+  "kg_facts": [
+   "(Ja Rule, occupation, singer)",
+   "(Amber Tamblyn, occupation, television actor)",
+   "(Ja Rule, occupation, rapper)",
+   "(Ja Rule, occupation, songwriter)",
+   "(Amber Tamblyn, occupation, screenwriter)",
+   "(Ja Rule, place of birth, Hollis)",
+   "(Ja Rule, country of citizenship, United States)",
+   "(Ja Rule, given name, Jeffrey)",
+   "(Ja Rule, birth name, Jeffrey Bruce Atkins)",
+   "(Amber Tamblyn, country of citizenship, United States)",
+   "(Amber Tamblyn, family name, Tamblyn)",
+   "(Ja Rule, instrument, voice)",
+   "(Ja Rule, pseudonym, Ja Rule)",
+   "(Amber Tamblyn, sex or gender, female)",
+   "(Ja Rule, date of birth, 1976-02-29)"
+  ]
+ },
+ {
+  "interaction_id": "52ab8dab-df77-4410-a98d-5fd898ff4ed0",
+  "query": "in their matches from the previous week, what is the total number of goals forced by lorient?",
+  "answer": "2",
+  "question_type": "simple_w_condition",
+  "label": "ambiguous",
+  "ev_scores": [
+   0.02190278097987175,
+   0.5846832990646362,
+   0.2560059428215027,
+   0.1821700483560562,
+   0.14154089987277985
+  ],
+  "kg_entities": [
+   "Lorient"
+  ],
+  "kg_facts": [
+   "(Lorient, country, France)",
+   "(Lorient, significant event, Raid on Lorient)",
+   "(Lorient, area, 17.48 Q712226)",
+   "(Lorient, postal code, 56100)",
+   "(Lorient, population, 57567)",
+   "(Lorient, topic's main category, Category:Lorient)",
+   "(Lorient, official name, Lorient)",
+   "(Lorient, population, 57961)",
+   "(Lorient, topic's main Wikimedia portal, Portal:Lorient)",
+   "(Lorient, category of associated people, Category:People from Lorient)",
+   "(Lorient, male population, 27065)",
+   "(Lorient, instance of, commune of France)",
+   "(Lorient, owner of, Stade du Moustoir)",
+   "(Lorient, flag, flag of Lorient)",
+   "(Lorient, capital of, canton of Lorient-Sud)"
+  ]
+ },
+ {
+  "interaction_id": "e113e7ce-1425-4537-b11a-e6b046eb2e05",
+  "query": "who were the members of the band the rolling stones during their \"exile on main st.\" era?",
+  "answer": "the members of the rolling stones during their \"exile on main st.\" era were mick jagger, keith richards, mick taylor, nicky hopkins, ronnie wood, bill wyman, and charlie watts.",
+  "question_type": "set",
+  "label": "correct",
+  "ev_scores": [
+   0.9888814091682434,
+   0.9892571568489075,
+   0.8982945680618286,
+   0.8982945680618286,
+   0.7461346387863159
+  ],
+  "kg_facts": []
+ },
+ {
+  "interaction_id": "45aaceb1-8798-4974-8938-6ebe7884e371",
+  "query": "which movie claimed the oscar for best visual effects in 2018?",
+  "answer": "blade runner 2049",
+  "question_type": "simple",
+  "label": "correct",
+  "ev_scores": [
+   0.9915733933448792,
+   0.9917638301849365,
+   0.9917638301849365,
+   0.9803301692008972,
+   0.9958464503288269
+  ],
+  "kg_facts": []
+ },
+ {
+  "interaction_id": "0b22e4a1-6b40-4017-a981-3c6a2c649636",
+  "query": "who has a longer streak of consecutive number one hits, ariana grande or taylor swift?",
+  "answer": "ariana grande has a longer streak of consecutive number one hits than taylor swift, with her first seven singles reaching number one on the billboard hot 100 chart, while taylor swift's streak of consecutive number one hits stopped at four.",
+  "question_type": "comparison",
+  "label": "correct",
+  "ev_scores": [
+   0.5687424540519714,
+   0.7054547071456909,
+   0.43741461634635925,
+   0.5193865895271301,
+   0.9654971361160278
+  ],
+  "kg_facts": []
+ },
+ {
+  "interaction_id": "124ac2de-8f18-41ac-9ec6-585f60be0fb8",
+  "query": "as the home team during 2023-01, how many of their games did charlotte hornets lose?",
+  "answer": "4",
+  "question_type": "aggregation",
+  "label": "correct",
+  "ev_scores": [
+   0.8938209414482117,
+   0.8938209414482117,
+   0.39647144079208374,
+   0.35701873898506165,
+   0.35701873898506165
+  ],
+  "kg_facts": []
+ },
+ {
+  "interaction_id": "5023f14a-b9f3-4c23-9eff-bb8497998b2d",
+  "query": "is the original dialogue of star wars: the rise of skywalker different in english?",
+  "answer": "no",
+  "question_type": "simple",
+  "label": "ambiguous",
+  "ev_scores": [
+   0.2596135437488556,
+   0.2759856581687927,
+   0.2759856581687927,
+   0.45116934180259705,
+   0.1083153709769249
+  ],
+  "kg_entities": [
+   "Star Wars",
+   "Rise of Skywalker",
+   "English"
+  ],
+  "kg_facts": [
+   "(Star Wars: Episode IX \u2013 The Rise of Skywalker, original language of film or TV show, English)",
+   "(Star Wars: Episode IX \u2013 The Rise of Skywalker, genre, Q468478)",
+   "(Star Wars: Episode IX \u2013 The Rise of Skywalker, instance of, film)",
+   "(Star Wars: Episode IX \u2013 The Rise of Skywalker, derivative work, Q87459697)",
+   "(Star Wars: Episode IX \u2013 The Rise of Skywalker, country of origin, Q30)",
+   "(Star Wars: Episode IX \u2013 The Rise of Skywalker, screenwriter, Q3208159)",
+   "(Star Wars: Episode IX \u2013 The Rise of Skywalker, film editor, Q79430604)",
+   "(Star Wars: Episode IX \u2013 The Rise of Skywalker, part of the series, Q6586871)",
+   "(Star Wars, different from, Star Wars)",
+   "(Star Wars: Episode IX \u2013 The Rise of Skywalker, film editor, Q3850525)",
+   "(Star Wars: Episode IX \u2013 The Rise of Skywalker, narrative location, Q94572994)",
+   "(Star Wars: Episode IX \u2013 The Rise of Skywalker, title, Star Wars: The Rise of Skywalker)",
+   "(Star Wars: Episode IX \u2013 The Rise of Skywalker, assessment, Q85783379)",
+   "(Star Wars, different from, Star war)",
+   "(Star Wars: Episode IX \u2013 The Rise of Skywalker, narrative location, Pasaana)"
+  ]
+ },
+ {
+  "interaction_id": "10a85abb-b0cc-4565-b576-8dd9595cadff",
+  "query": "what is the term for the highest mountain on each continent",
+  "answer": "the seven summits, a well-known mountaineering objective, are the highest peaks on each of the seven continents.",
+  "question_type": "set",
+  "label": "correct",
+  "ev_scores": [
+   0.9888303875923157,
+   0.9991569519042969,
+   0.9950651526451111,
+   0.9963816404342651,
+   0.7031221389770508
+  ],
+  "kg_facts": []
+ },
+ {
+  "interaction_id": "b9e7441c-ff95-4f1e-99a2-d7da65a7a78b",
+  "query": "what was the point total for warriors on 2023-05-12?",
+  "answer": "101",
+  "question_type": "simple_w_condition",
+  "label": "ambiguous",
+  "ev_scores": [
+   0.21216082572937012,
+   0.07330106198787689,
+   0.00470984959974885,
+   0.24908486008644104,
+   0.06334526091814041
+  ],
+  "kg_entities": [
+   "Warriors"
+  ],
+  "kg_facts": [
+   "(Golden State Warriors, P361, Q206201)",
+   "(Golden State Warriors, P127, Q6210825)",
+   "(Golden State Warriors, P571, 1946-00-00)",
+   "(Golden State Warriors, P127, Q970867)",
+   "(Golden State Warriors, P1830, Q24665)",
+   "(Golden State Warriors, P166, Q31736)",
+   "(Golden State Warriors, P31, Q13393265)",
+   "(Golden State Warriors, P115, Q604015)",
+   "(Golden State Warriors, P8687, 1490000)",
+   "(Golden State Warriors, P8687, 1890000)",
+   "(Golden State Warriors, P118, Q155223)",
+   "(Golden State Warriors, P6112, Q6370962)",
+   "(Golden State Warriors, P641, Q5372)",
+   "(Golden State Warriors, P1424, Q25867298)",
+   "(Golden State Warriors, P2652, Q139989233)"
+  ]
+ },
+ {
+  "interaction_id": "3e9085f3-8b0f-4a21-aef0-cc5f675ebfce",
+  "query": "what is the etymology of haribo's name?",
+  "answer": "a syllabic abbreviation formed from hans riegel bonn",
+  "question_type": "post-processing",
+  "label": "correct",
+  "ev_scores": [
+   0.290357381105423,
+   0.10369458049535751,
+   0.9254366159439087,
+   0.21527326107025146,
+   0.5647715330123901
+  ],
+  "kg_facts": []
+ },
+ {
+  "interaction_id": "6c44f37c-bc93-4e24-a2f1-74c41cc0e135",
+  "query": "who are the members of neutral milk hotel?",
+  "answer": "jeff magnum, julian koster, scott spillane, and jeremy barnes",
+  "question_type": "set",
+  "label": "correct",
+  "ev_scores": [
+   0.9938433170318604,
+   0.625679075717926,
+   0.996320366859436,
+   0.9873788952827454,
+   0.9873788952827454
+  ],
+  "kg_facts": []
+ },
+ {
+  "interaction_id": "049ab05b-fd1a-42a0-b749-38eeedb0ac72",
+  "query": "what's the open price for intellicheck today?",
+  "answer": "$1.75",
+  "question_type": "simple",
+  "label": "correct",
+  "ev_scores": [
+   0.9520837664604187,
+   0.417490690946579,
+   0.9961357712745667,
+   0.9948931932449341,
+   0.6184549331665039
+  ],
+  "kg_facts": []
+ },
+ {
+  "interaction_id": "5242efe2-5991-4022-8d41-250b2242f6a0",
+  "query": "which movie has a higher number of original songs, grease or la la land?",
+  "answer": "la la land has a higher number of original songs, with 6 original songs, while grease has 4 original songs.",
+  "question_type": "comparison",
+  "label": "correct",
+  "ev_scores": [
+   0.9112370610237122,
+   0.9107420444488525,
+   0.8977075219154358,
+   0.9242982864379883,
+   0.9151479005813599
+  ],
+  "kg_facts": []
+ },
+ {
+  "interaction_id": "f4c0378f-8346-48d6-bbc2-a14a9bd958e2",
+  "query": "what country adopted bitcoin as legal tender before 2020?",
+  "answer": "invalid question",
+  "question_type": "false_premise",
+  "label": "correct",
+  "ev_scores": [
+   0.9929206967353821,
+   0.9929206967353821,
+   0.9949415326118469,
+   0.9949415326118469,
+   0.8723013401031494
+  ],
+  "kg_facts": []
+ },
+ {
+  "interaction_id": "983d2745-2141-43b6-9980-52756bfc0a9d",
+  "query": "what are 5 stocks that dropped the most ytd performance % in the year 2020",
+  "answer": "here are 5 stocks that dropped the most in 2020. oxy, coty, mro, fti, and ccl",
+  "question_type": "set",
+  "label": "correct",
+  "ev_scores": [
+   0.8236531019210815,
+   0.8236531019210815,
+   0.8713802099227905,
+   0.8713802099227905,
+   0.9385221004486084
+  ],
+  "kg_facts": []
+ },
+ {
+  "interaction_id": "1084c118-932b-4531-82bd-ddd3a6b196a2",
+  "query": "can you tell me the opening stock price of kndi on the tuesday from the past week?",
+  "answer": "$2.66",
+  "question_type": "simple",
+  "label": "correct",
+  "ev_scores": [
+   0.5411450266838074,
+   0.8046953082084656,
+   0.3094356656074524,
+   0.28203505277633667,
+   0.47450870275497437
+  ],
+  "kg_facts": []
+ },
+ {
+  "interaction_id": "6df73b5a-25df-4646-ba42-efc6ce3bce03",
+  "query": "how many goals were scored in total by chelsea the previous week?",
+  "answer": "invalid question",
+  "question_type": "false_premise",
+  "label": "correct",
+  "ev_scores": [
+   0.9276837110519409,
+   0.9276837110519409,
+   0.8992511630058289,
+   0.8992511630058289,
+   0.8190889954566956
+  ],
+  "kg_facts": []
+ },
+ {
+  "interaction_id": "9573fc4c-9f7d-49b9-91f8-e2eca3bc0d92",
+  "query": "do you know the name of the director who directed the pact ii?",
+  "answer": "patrick horvath",
+  "question_type": "simple",
+  "label": "correct",
+  "ev_scores": [
+   0.9971438050270081,
+   0.996147871017456,
+   0.9967701435089111,
+   0.9928191304206848,
+   0.16701659560203552
+  ],
+  "kg_facts": []
+ },
+ {
+  "interaction_id": "d5ee49c8-27f9-4c6a-953a-25f1c4e3b891",
+  "query": "in 2011, which movie was distinguished for its visual effects at the oscars?",
+  "answer": "inception",
+  "question_type": "simple",
+  "label": "correct",
+  "ev_scores": [
+   0.9958775043487549,
+   0.9964296221733093,
+   0.9927724003791809,
+   0.9927724003791809,
+   0.9866781234741211
+  ],
+  "kg_facts": []
+ },
+ {
+  "interaction_id": "d3afe2bc-91a8-4960-bdaf-71bfff23157c",
+  "query": "what are justin bieber's three most recent releases?",
+  "answer": "beautiful love (free fire), i feel funny, intentions (acoustic)",
+  "question_type": "simple",
+  "label": "correct",
+  "ev_scores": [
+   0.923633337020874,
+   0.9406405687332153,
+   0.6929641366004944,
+   0.327581524848938,
+   0.6268545985221863
+  ],
+  "kg_facts": []
+ },
+ {
+  "interaction_id": "a2ab3629-3f6b-4cf7-a2fc-f3ace539f75e",
+  "query": "which sport is the most watched in the us, football or basketball?",
+  "answer": "football",
+  "question_type": "comparison",
+  "label": "correct",
+  "ev_scores": [
+   0.9984340071678162,
+   0.9992502331733704,
+   0.9992502331733704,
+   0.9982660412788391,
+   0.9982660412788391
+  ],
+  "kg_facts": []
+ },
+ {
+  "interaction_id": "a33180cd-1301-4ae5-b3c6-9ed916a53ebf",
+  "query": "on average, how many watts of power is kfyo (am) powered by day?",
+  "answer": "5,000 watts",
+  "question_type": "simple_w_condition",
+  "label": "correct",
+  "ev_scores": [
+   0.999693751335144,
+   0.9991668462753296,
+   0.9993665814399719,
+   0.9982680082321167,
+   0.9990547299385071
+  ],
+  "kg_facts": []
+ },
+ {
+  "interaction_id": "2e240598-6328-47a7-ab04-e32bc1504507",
+  "query": "what was the total amount of venture capital investment in renewable energy startups in the united states during 2022?",
+  "answer": "the total amount of venture capital investment in renewable energy startups in the united states during 2022 was $2.5 billion.",
+  "question_type": "simple_w_condition",
+  "label": "correct",
+  "ev_scores": [
+   0.999342143535614,
+   0.9693193435668945,
+   0.9693193435668945,
+   0.9970001578330994,
+   0.9970001578330994
+  ],
+  "kg_facts": []
+ },
+ {
+  "interaction_id": "13098e66-904e-48cb-94d3-06524852eb51",
+  "query": "can you tell me who directed guns n' roses - live in paris?",
+  "answer": "paul becher",
+  "question_type": "simple",
+  "label": "ambiguous",
+  "ev_scores": [
+   0.08315309137105942,
+   0.048986081033945084,
+   0.14389383792877197,
+   0.20463848114013672,
+   0.03859163075685501
+  ],
+  "kg_entities": [
+   "Guns N' Roses",
+   "Live In Paris",
+   "Guns N' Roses"
+  ],
+  "kg_facts": [
+   "(Guns N' Roses, country of origin, United States)",
+   "(Guns N' Roses, country of origin, United States)",
+   "(Live in Paris, instance of, video album)",
+   "(Live in Paris, distribution format, direct-to-video)",
+   "(Guns N' Roses, location of formation, Los Angeles)",
+   "(Guns N' Roses, location of formation, Los Angeles)",
+   "(Guns N' Roses, inception, 1985-01-01)",
+   "(Guns N' Roses, inception, 1985-01-01)",
+   "(Live in Paris, form of creative work, live album)",
+   "(Live in Paris, publication date, 2002-00-00)",
+   "(Live in Paris, producer, Tommy LiPuma)",
+   "(Guns N' Roses, award received, World Music Awards)",
+   "(Guns N' Roses, award received, World Music Awards)",
+   "(Guns N' Roses, has part(s), Richard Fortus)",
+   "(Guns N' Roses, has part(s), Richard Fortus)"
+  ]
+ },
+ {
+  "interaction_id": "1b4e6ba6-f847-432b-a109-83b191589bc4",
+  "query": "who was head coach of the colts in peyton manning's rookie year?",
+  "answer": "jim e. mora",
+  "question_type": "multi-hop",
+  "label": "correct",
+  "ev_scores": [
+   0.7971787452697754,
+   0.22350172698497772,
+   0.5611596703529358,
+   0.7729894518852234,
+   0.24613399803638458
+  ],
+  "kg_facts": []
+ },
+ {
+  "interaction_id": "ee012fcc-71b8-4e87-8571-f06f4bfa255d",
+  "query": "what is the volume of bitcoin when it opened at over 55,000 on feb 14 2024",
+  "answer": "invalid question",
+  "question_type": "false_premise",
+  "label": "ambiguous",
+  "ev_scores": [
+   0.07649188488721848,
+   0.24379782378673553,
+   0.17157332599163055,
+   0.3477586507797241,
+   0.02403140999376774
+  ],
+  "kg_entities": [
+   "Bitcoin"
+  ],
+  "kg_facts": [
+   "(Bitcoin, price, 33232.34 Q4917)",
+   "(Bitcoin, publication date, 2009-01-03)",
+   "(Bitcoin, power consumed, 18.4 Q5879479)",
+   "(Bitcoin, time of earliest written record, 2008-10-31)",
+   "(Bitcoin, price, 7511.5 Q4917)",
+   "(Bitcoin, conversion to standard unit, 100000000 Q56868002)",
+   "(Bitcoin, price, 31373.06 Q173117)",
+   "(Bitcoin, market capitalization, 712696504252 Q4917)",
+   "(Bitcoin, history of topic, history of bitcoin)",
+   "(Bitcoin, subdivision of this unit, mBTC)",
+   "(Bitcoin, notation, \u20bf)",
+   "(Bitcoin, named after, bit)",
+   "(Bitcoin, currency sign, \u20bf)",
+   "(Bitcoin, inception, 2009-01-03)",
+   "(Bitcoin, port, 8333)"
+  ]
+ },
+ {
+  "interaction_id": "764c0116-2cad-497b-ada4-78fb58f8888d",
+  "query": "what is capital gain?",
+  "answer": "capital gain is an economic concept defined as the profit earned on the sale of an asset which has increased in value over the holding period.",
+  "question_type": "simple",
+  "label": "correct",
+  "ev_scores": [
+   0.9982902407646179,
+   0.9580771327018738,
+   0.9777289032936096,
+   0.9487161636352539,
+   0.9844920635223389
+  ],
+  "kg_facts": []
+ },
+ {
+  "interaction_id": "bf1da8c6-4964-4c66-a560-a17099498027",
+  "query": "do you know when did chris brown release song or album the last time?",
+  "answer": "2023-10-20",
+  "question_type": "simple",
+  "label": "correct",
+  "ev_scores": [
+   0.950986921787262,
+   0.8618508577346802,
+   0.7903218865394592,
+   0.9528083801269531,
+   0.9528083801269531
+  ],
+  "kg_facts": []
+ },
+ {
+  "interaction_id": "0371e46a-b1b5-4d24-9711-dd57a5cdf13b",
+  "query": "how many grand slams has novak djokovic won on clay courts?",
+  "answer": "3",
+  "question_type": "multi-hop",
+  "label": "correct",
+  "ev_scores": [
+   0.9993915557861328,
+   0.9984007477760315,
+   0.9960926175117493,
+   0.9962756633758545,
+   0.6980388760566711
+  ],
+  "kg_facts": []
+ },
+ {
+  "interaction_id": "5007fea5-84da-4362-b24e-1217e7dca0b6",
+  "query": "what was the total number of shares traded for special opportunities fund during the first week of february?",
+  "answer": "93600",
+  "question_type": "aggregation",
+  "label": "incorrect",
+  "ev_scores": [
+   0.0010882444912567735,
+   0.00022444054775405675,
+   0.007592678535729647,
+   0.0003815273230429739,
+   0.00047955274931155145
+  ],
+  "kg_entities": [
+   "Special Opportunities Fund"
+  ],
+  "kg_facts": []
+ },
+ {
+  "interaction_id": "dc7006ee-cf6f-499d-a660-21e0b45a205c",
+  "query": "how many movies did andrew walton direct?",
+  "answer": "1",
+  "question_type": "aggregation",
+  "label": "ambiguous",
+  "ev_scores": [
+   0.5125360488891602,
+   0.36997443437576294,
+   0.4227212071418762,
+   0.04193037003278732,
+   0.06538055837154388
+  ],
+  "kg_entities": [
+   "Andrew Walton",
+   "movies"
+  ],
+  "kg_facts": [
+   "(Andrew Walton, given name, Andrew)",
+   "(Andrew Walton, instance of, human)",
+   "(Andrew Walton, family name, Walton)",
+   "(Andrew Walton, date of birth, 1945-00-00)",
+   "(Andrew Walton, sex or gender, male)",
+   "(Andrew Walton, occupation, Canadian football player)",
+   "(Andrew Walton, occupation, American football player)",
+   "(Andrew Walton, sport, American football)",
+   "(Andrew Walton, position played on team / speciality, running back)",
+   "(Andrew Walton, member of sports team, Ottawa Rough Riders)",
+   "(film, Commons category, Film)",
+   "(film, hashtag, movies)",
+   "(film, has part(s), motion picture credits)",
+   "(film, topic has template, Template:Infobox film)",
+   "(film, topic's main category, Category:Films)"
+  ]
+ },
+ {
+  "interaction_id": "a2486535-98e7-4876-9880-80374eac2fa8",
+  "query": "what is a movie to feature a person who can create and control a device that can manipulate the laws of physics?",
+  "answer": "a movie that features a person who can create and control a device that can manipulate the laws of physics was \"the core\" in 2003, which starred aaron eckhart as a scientist who invents a device that can manipulate the laws of physics, allowing him to control gravity, time, and matter, and he must use this technology to save the earth from destruction after the planet's core suddenly stops rotating.",
+  "question_type": "simple_w_condition",
+  "label": "correct",
+  "ev_scores": [
+   0.961572527885437,
+   0.9405359029769897,
+   0.35889285802841187,
+   0.08487414568662643,
+   0.7911165356636047
+  ],
+  "kg_facts": []
+ },
+ {
+  "interaction_id": "19a5b394-5561-4e70-bfd6-0087d6472772",
+  "query": "in 2022-12, how many times did new york knicks lose their games as the home team?",
+  "answer": "4",
+  "question_type": "aggregation",
+  "label": "correct",
+  "ev_scores": [
+   0.2020074427127838,
+   0.4901219606399536,
+   0.8767051696777344,
+   0.6942309141159058,
+   0.20627550780773163
+  ],
+  "kg_facts": []
+ },
+ {
+  "interaction_id": "4ef3290a-1d97-4c93-a1d2-e57a5822e114",
+  "query": "how many professional teams are based in los angeles?",
+  "answer": "11",
+  "question_type": "simple",
+  "label": "correct",
+  "ev_scores": [
+   0.9758703708648682,
+   0.9984904527664185,
+   0.9984904527664185,
+   0.9984456896781921,
+   0.9984456896781921
+  ],
+  "kg_facts": []
+ },
+ {
+  "interaction_id": "f4f22219-7389-4940-8197-1f511acac053",
+  "query": "what are the 2 longest rivers in nevada?",
+  "answer": "the 2 longest rivers in nevada are the colorado river and the humboldt river.",
+  "question_type": "aggregation",
+  "label": "correct",
+  "ev_scores": [
+   0.607052206993103,
+   0.6296776533126831,
+   0.5306292176246643,
+   0.030812224373221397,
+   0.030812224373221397
+  ],
+  "kg_facts": []
+ },
+ {
+  "interaction_id": "47859020-9974-4c81-a897-96594beca8fb",
+  "query": "how many family movies were there that came out in 1994?",
+  "answer": "109",
+  "question_type": "aggregation",
+  "label": "correct",
+  "ev_scores": [
+   0.4324965178966522,
+   0.31109699606895447,
+   0.04955422505736351,
+   0.04955422505736351,
+   0.8158954381942749
+  ],
+  "kg_facts": []
+ },
+ {
+  "interaction_id": "14f02c7e-aae6-44ab-b8a5-57d40aeffae1",
+  "query": "by how many points did the tennessee titans beat the st. louis rams in the 2000 super bowl?",
+  "answer": "invalid question",
+  "question_type": "false_premise",
+  "label": "correct",
+  "ev_scores": [
+   0.9871326684951782,
+   0.9871326684951782,
+   0.9923930168151855,
+   0.9923930168151855,
+   0.9918711185455322
+  ],
+  "kg_facts": []
+ },
+ {
+  "interaction_id": "c79be8a4-547c-41e2-b71c-394f1a5bdc79",
+  "query": "in the past 4 years for apple as a company, which year had the highest gross profit?",
+  "answer": "apple had the highest gross income of 170,782,000 in 2022",
+  "question_type": "simple_w_condition",
+  "label": "correct",
+  "ev_scores": [
+   0.09196098893880844,
+   0.09196098893880844,
+   0.20687665045261383,
+   0.2141922414302826,
+   0.6563026905059814
+  ],
+  "kg_facts": []
+ },
+ {
+  "interaction_id": "f578ffd3-38e6-47ca-8722-5422fcf0a032",
+  "query": "which 3 countries have adopted bitcoin as legal tender?",
+  "answer": "invalid question",
+  "question_type": "false_premise",
+  "label": "correct",
+  "ev_scores": [
+   0.9974495768547058,
+   0.9925724267959595,
+   0.9976995587348938,
+   0.999521017074585,
+   0.9920817613601685
+  ],
+  "kg_facts": []
+ },
+ {
+  "interaction_id": "971dfeb2-9cbf-4c6f-84fd-b2476a59e640",
+  "query": "who is the person to win best actor award in 1994?",
+  "answer": "tom hanks",
+  "question_type": "simple",
+  "label": "correct",
+  "ev_scores": [
+   0.9856357574462891,
+   0.9161015152931213,
+   0.988698422908783,
+   0.984420120716095,
+   0.9410675168037415
+  ],
+  "kg_facts": []
+ },
+ {
+  "interaction_id": "0046851e-506f-4925-b769-bda66af48f9e",
+  "query": "can i make cookies in an air fryer?",
+  "answer": "yes",
+  "question_type": "simple",
+  "label": "correct",
+  "ev_scores": [
+   0.9995449185371399,
+   0.999366819858551,
+   0.9968839287757874,
+   0.9998828172683716,
+   0.999785840511322
+  ],
+  "kg_facts": []
+ },
+ {
+  "interaction_id": "d5755830-f066-46bf-8764-83c9c4ceda6e",
+  "query": "how many masters has tiger woods won?",
+  "answer": "5 times",
+  "question_type": "aggregation",
+  "label": "correct",
+  "ev_scores": [
+   0.9991543292999268,
+   0.9977642297744751,
+   0.9930216670036316,
+   0.9984269142150879,
+   0.9994909763336182
+  ],
+  "kg_facts": []
+ },
+ {
+  "interaction_id": "3a4e0bee-fee3-4298-9bae-a89b86692c92",
+  "query": "how many grand slams has iga swiatek won on hard courts?",
+  "answer": "2",
+  "question_type": "multi-hop",
+  "label": "correct",
+  "ev_scores": [
+   0.9907581806182861,
+   0.9189329147338867,
+   0.9571921229362488,
+   0.850579559803009,
+   0.9945862293243408
+  ],
+  "kg_facts": []
+ },
+ {
+  "interaction_id": "0f2505e7-df78-4df9-aa7f-b060e5848e0f",
+  "query": "how many stock exchanges are operated by nasdaq, inc?",
+  "answer": "10",
+  "question_type": "aggregation",
+  "label": "correct",
+  "ev_scores": [
+   0.13458684086799622,
+   0.13458684086799622,
+   0.8919764757156372,
+   0.6062355637550354,
+   0.4073885381221771
+  ],
+  "kg_facts": []
+ },
+ {
+  "interaction_id": "90b1defb-9141-464e-a2fc-0c697129a0bf",
+  "query": "when was stevie wonder the keyboardist for the band the rolling stones?",
+  "answer": "invalid question",
+  "question_type": "false_premise",
+  "label": "correct",
+  "ev_scores": [
+   0.7487224340438843,
+   0.9590665698051453,
+   0.49750423431396484,
+   0.9596479535102844,
+   0.08591346442699432
+  ],
+  "kg_facts": []
+ },
+ {
+  "interaction_id": "b13a9d35-1637-4798-8744-1cf43249cee7",
+  "query": "when did chris paul retire?",
+  "answer": "invalid question",
+  "question_type": "false_premise",
+  "label": "correct",
+  "ev_scores": [
+   0.9719666838645935,
+   0.8882730007171631,
+   0.6008480191230774,
+   0.7624184489250183,
+   0.998578667640686
+  ],
+  "kg_facts": []
+ },
+ {
+  "interaction_id": "bc31f487-476e-4fa0-b2a2-1c1c1f13b0f5",
+  "query": "which company has a higher operating margin, apple or microsoft?",
+  "answer": "as of the current financial data, apple has a higher operating margin than microsoft, with an operating margin of 21.32% compared to microsoft's 20.53%.",
+  "question_type": "comparison",
+  "label": "correct",
+  "ev_scores": [
+   0.9472548961639404,
+   0.9470885992050171,
+   0.8455106616020203,
+   0.9945766925811768,
+   0.6913957595825195
+  ],
+  "kg_facts": []
+ },
+ {
+  "interaction_id": "39cae1db-ca62-45e5-841b-1217aca07ae4",
+  "query": "what was the number of days that cpi aerostructures saw a higher open price from the previous day's close this week?",
+  "answer": "1",
+  "question_type": "simple",
+  "label": "correct",
+  "ev_scores": [
+   0.3803974390029907,
+   0.9426226019859314,
+   0.48929524421691895,
+   0.29330894351005554,
+   0.5031515955924988
+  ],
+  "kg_facts": []
+ },
+ {
+  "interaction_id": "63cd483d-e0ee-4b9a-96d6-cf5ccd5b6f54",
+  "query": "what's the language that the bourne ultimatum was released publicly in?",
+  "answer": "en",
+  "question_type": "simple",
+  "label": "correct",
+  "ev_scores": [
+   0.9283785820007324,
+   0.9818968772888184,
+   0.10648023337125778,
+   0.10168593376874924,
+   0.13749444484710693
+  ],
+  "kg_facts": []
+ },
+ {
+  "interaction_id": "259a2f96-3c32-491f-a388-b903bf75adcd",
+  "query": "in 2021-12, which teams were able to take down houston rockets and come out on top?",
+  "answer": "charlotte hornets, chicago bulls, cleveland cavaliers, indiana pacers, los angeles lakers, memphis grizzlies, miami heat, milwaukee bucks, new york knicks",
+  "question_type": "set",
+  "label": "correct",
+  "ev_scores": [
+   0.8294082283973694,
+   0.6574066877365112,
+   0.08649635314941406,
+   0.9541664719581604,
+   0.4897101819515228
+  ],
+  "kg_facts": []
+ },
+ {
+  "interaction_id": "7bb29eb4-12f9-45f9-bf8a-66832b3c8962",
+  "query": "how many 3-point attempts did steve nash average per game in seasons he made the 50-40-90 club?",
+  "answer": "4 3-points attempts per game",
+  "question_type": "post-processing",
+  "label": "correct",
+  "ev_scores": [
+   0.9983988404273987,
+   0.9195452928543091,
+   0.1838553100824356,
+   0.2588602304458618,
+   0.2742357552051544
+  ],
+  "kg_facts": []
+ },
+ {
+  "interaction_id": "431a0e8e-b9ac-4ebf-90ee-8a6cf98a7639",
+  "query": "what movie's visual effects were considered the most impressive by the academy in 1995, winning the coveted best visual effects award?",
+  "answer": "forrest gump",
+  "question_type": "simple",
+  "label": "correct",
+  "ev_scores": [
+   0.7114823460578918,
+   0.5362724661827087,
+   0.4150853753089905,
+   0.9247289299964905,
+   0.9247289299964905
+  ],
+  "kg_facts": []
+ },
+ {
+  "interaction_id": "ca3154fd-29f4-4101-b928-33bf291176d9",
+  "query": "did roxanna michaels play in any movie between 2018 and 1993",
+  "answer": "yes",
+  "question_type": "simple_w_condition",
+  "label": "ambiguous",
+  "ev_scores": [
+   0.090062215924263,
+   0.0856236144900322,
+   0.5165291428565979,
+   0.28789660334587097,
+   0.5239394903182983
+  ],
+  "kg_entities": [
+   "Roxanna Michaels"
+  ],
+  "kg_facts": []
+ },
+ {
+  "interaction_id": "b7b24452-9c1a-4276-afa8-62fd6c7acf35",
+  "query": "what movies are coming out in july 2024?",
+  "answer": "deadpool & wolverine, despicable me 4, twisters, beverly hills cop: axel f",
+  "question_type": "set",
+  "label": "correct",
+  "ev_scores": [
+   0.999853253364563,
+   0.9899957180023193,
+   0.9994643330574036,
+   0.992770254611969,
+   0.9952964186668396
+  ],
+  "kg_facts": []
+ },
+ {
+  "interaction_id": "d1cc84a1-4b8e-4f64-ab0e-c0aa0a93cae2",
+  "query": "what sport does pau gasol's brother play?",
+  "answer": "basketball",
+  "question_type": "multi-hop",
+  "label": "correct",
+  "ev_scores": [
+   0.9997077584266663,
+   0.9997077584266663,
+   0.9978407621383667,
+   0.9978407621383667,
+   0.9988524913787842
+  ],
+  "kg_facts": []
+ },
+ {
+  "interaction_id": "50f61c3a-b5b7-4a59-b348-dd8077f5820a",
+  "query": "who are the biggest investors in amazon?",
+  "answer": "vanguard group inc",
+  "question_type": "simple_w_condition",
+  "label": "correct",
+  "ev_scores": [
+   0.9702504873275757,
+   0.9702504873275757,
+   0.9702504873275757,
+   0.7584729790687561,
+   0.64441978931427
+  ],
+  "kg_facts": []
+ },
+ {
+  "interaction_id": "cd4ce08e-8414-483e-a66c-842c0700189c",
+  "query": "what was newcastle utd's score last week?",
+  "answer": "invalid question",
+  "question_type": "false_premise",
+  "label": "ambiguous",
+  "ev_scores": [
+   0.11279845237731934,
+   0.13926327228546143,
+   0.13926327228546143,
+   0.46880006790161133,
+   0.46880006790161133
+  ],
+  "kg_entities": [
+   "Newcastle Utd"
+  ],
+  "kg_facts": [
+   "(Newcastle Utd v Queens Park Rangers, 15 January 2012, point in time, 2012-01-15)",
+   "(Newcastle Utd v Queens Park Rangers, 15 January 2012, sport, association football)",
+   "(Newcastle Utd v Queens Park Rangers, 15 January 2012, instance of, association football match)",
+   "(Newcastle Utd v Queens Park Rangers, 15 January 2012, Commons category, Newcastle Utd v Queens Park Rangers, 15 January 2012)"
+  ]
+ },
+ {
+  "interaction_id": "a308abbc-26c3-4434-9412-c4a7569767e2",
+  "query": "when did nice last take the field in fra-ligue 1?",
+  "answer": "2024-03-08",
+  "question_type": "simple_w_condition",
+  "label": "correct",
+  "ev_scores": [
+   0.6032997369766235,
+   0.358876496553421,
+   0.34396007657051086,
+   0.3751159906387329,
+   0.34033000469207764
+  ],
+  "kg_facts": []
+ },
+ {
+  "interaction_id": "27d21faa-dc57-458d-a126-847b1748e4c0",
+  "query": "which player has the most career passing tds in the nfl among players who have never won a super bowl?",
+  "answer": "philip rivers has the most career passing tds in the nfl among players who have never won a super bowl, with 421 touchdowns.",
+  "question_type": "simple_w_condition",
+  "label": "correct",
+  "ev_scores": [
+   0.9891917109489441,
+   0.9891685247421265,
+   0.9953482747077942,
+   0.977042019367218,
+   0.992102324962616
+  ],
+  "kg_facts": []
+ },
+ {
+  "interaction_id": "9af2d601-a081-4c0b-b13d-ed56349c4b96",
+  "query": "how many patents does microsoft hold globally?",
+  "answer": "77631 patents",
+  "question_type": "simple_w_condition",
+  "label": "correct",
+  "ev_scores": [
+   0.02252204529941082,
+   0.03168546408414841,
+   0.8621091246604919,
+   0.005395472515374422,
+   0.0015732349129393697
+  ],
+  "kg_facts": []
+ },
+ {
+  "interaction_id": "ce04d9e2-a9e7-4377-8007-e4287fb99e88",
+  "query": "is mercury the farthest planet from the sun?",
+  "answer": "no, mercury is the closest planet to the sun",
+  "question_type": "simple",
+  "label": "correct",
+  "ev_scores": [
+   0.99842369556427,
+   0.9997064471244812,
+   0.9944044351577759,
+   0.9944044351577759,
+   0.998664379119873
+  ],
+  "kg_facts": []
+ },
+ {
+  "interaction_id": "c60121dc-6c3f-4f11-85d0-3a0442bed764",
+  "query": "was tron the first to use computer-generated imagery (cgi) entirely?",
+  "answer": "invalid question",
+  "question_type": "false_premise",
+  "label": "correct",
+  "ev_scores": [
+   0.9775981903076172,
+   0.9775981903076172,
+   0.2798777222633362,
+   0.2798777222633362,
+   0.2798777222633362
+  ],
+  "kg_facts": []
+ },
+ {
+  "interaction_id": "e9e45c2a-0ede-41e7-9ceb-90538d7d826c",
+  "query": "what nfl team has deion sanders played for?",
+  "answer": "atlanta falcons, san francisco 49ers, dallas cowboys, washinton redskins, baltimore ravens",
+  "question_type": "set",
+  "label": "correct",
+  "ev_scores": [
+   0.9995095729827881,
+   0.9978512525558472,
+   0.9988883137702942,
+   0.9991676807403564,
+   0.9981497526168823
+  ],
+  "kg_facts": []
+ },
+ {
+  "interaction_id": "41e20f6e-d4fd-4e43-a35f-4d6b0dfbcfb7",
+  "query": "what's the language that eagle eye was released publicly in?",
+  "answer": "en",
+  "question_type": "simple",
+  "label": "correct",
+  "ev_scores": [
+   0.9030884504318237,
+   0.9030884504318237,
+   0.9030884504318237,
+   0.07057010382413864,
+   0.07057010382413864
+  ],
+  "kg_facts": []
+ }
+]

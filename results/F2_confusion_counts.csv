@@ -1,0 +1,8 @@
+row_0,"good
+(answer in top-5)","partial
+(answer elsewhere in pages)","bad
+(answer absent)","false premise
+(no support)"
+correct,73,17,57,18
+ambiguous,7,1,7,3
+incorrect,2,0,13,2

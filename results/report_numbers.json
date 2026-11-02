@@ -1,0 +1,67 @@
+{
+ "top_fb_type": "comparison",
+ "chunks_total": 13036,
+ "chunks_mean": 65.2,
+ "domains": "finance 49, sports 46, movie 43, open 36, music 26",
+ "n_invalid": 23,
+ "n_answerable": 177,
+ "answer_in_pages": 0.565,
+ "kg_found_rate": 0.829,
+ "fp_acc_no": 66.66666666666666,
+ "t1_text": [
+  "Standard RAG raised accuracy from 17.3 % (no retrieval) to 17.0 % (-0.3 points). Corrective RAG with the KG fallback reached 18.0 % (+1.0 points versus standard RAG). No retrieval was run with 3 seeds (std 1.4 points); because of the GPU time budget the two RAG methods were run with one seed, so their seed variance is not measured. Using the no-retrieval std as a guide, the difference between the two RAG variants is within sampling noise.",
+  "Hallucination rates were 65.5 %, 71.5 % and 68.5 %, and missing ('I don't know') rates 17.2 %, 11.5 % and 13.5 %. Because CRAG's score subtracts hallucinations, a method that abstains more can score better even with similar accuracy. Absolute accuracy is low for every method: a 1.5 B model, strict string-containment scoring and the fact that only 56.5 % of answerable questions have their answer anywhere in the five pages all cap performance."
+ ],
+ "t2_text": [
+  "The evaluator labelled 165 questions correct, 18 ambiguous and 17 incorrect, so the KG fallback was used for 35 questions (17.5 %). Wikidata returned at least one linked entity for 82.9 % of these.",
+  "Figure F2 shows that the evaluator is lenient: when it says 'correct', the top-5 chunks actually contain the gold answer in only 44.2 % of cases, while it labels 89.0 % of truly good retrievals as correct. The cross-encoder scores topical relevance (the page is about the right entity) rather than answer presence, so many questions whose pages are on-topic but lack the specific fact are never routed to the KG. On the questions that were routed (ambiguous + incorrect), accuracy was ambiguous: standard RAG 16.7 % vs corrective 16.7 %; incorrect: standard RAG 5.9 % vs corrective 17.6 %."
+ ],
+ "t3_text": [
+  "Fallback rate differs strongly by question type: it is highest for comparison (26.1 %) and lowest for set (0.0 %). Relative to standard RAG, corrective RAG helped most on comparison (+4.3 points) and hurt most on aggregation (+0.0 points).",
+  "False-premise questions are answered best without retrieval (66.7 %) \u2014 retrieved pages about a real entity make the model accept the false premise (standard RAG 21.7 %, corrective 26.1 %). Aggregation, multi-hop and post-processing questions remain hard for every method because a 1.5 B model must combine several facts; a KG triple list rarely contains the pre-computed aggregate. Per-type cells hold only 9\u201356 questions, so differences under about 5 points should not be over-interpreted."
+ ],
+ "t4_text": "With the chosen thresholds (0.60 / 0.15) the fallback rate is 17.5 %. Raising the upper threshold to 0.80 increases the fallback rate to 26.0 % and the precision of the 'correct' label changes from 0.442 to 0.466; a stricter evaluator would send more questions to the KG, at the cost of discarding some good web evidence. Thresholds were not tuned on the test questions, to avoid overfitting a 200-question set.",
+ "cost_text": "Total measured time was 29.3 min on an RTX 3050 (4 GB). Generation dominates. Corrective RAG used 121,401 prompt tokens versus 138,362 for standard RAG, because knowledge refinement drops low-score chunks; the KG lookup added 210 s (mostly polite Wikidata rate-limiting) and 2,908 tokens for entity extraction.",
+ "failures": [
+  {
+   "type": "simple",
+   "text": "Q: \"can you tell me who directed guns n' roses - live in paris?\" Gold: \"paul becher\". Evaluator: ambiguous (max score 0.20); KG entities: Guns N' Roses, Live In Paris, Guns N' Roses; top KG fact: (Guns N' Roses, country of origin, United States). Standard RAG: \"I don't know.\". Corrective RAG: \"Tommy LiPuma\". Diagnosis: entity-linking error in the KG."
+  },
+  {
+   "type": "false_premise",
+   "text": "Q: \"what is the name of millie bobby brown's upcoming fashion line?\" Gold: \"invalid question\". Evaluator: correct (max score 0.97). Standard RAG: \"Florence by Mills\". Corrective RAG: \"Florence by Mills\". Diagnosis: false premise accepted."
+  },
+  {
+   "type": "multi-hop",
+   "text": "Q: \"how many grand slams has novak djokovic won on clay courts?\" Gold: \"3\". Evaluator: correct (max score 1.00). Standard RAG: \"18\". Corrective RAG: \"18\". Diagnosis: reasoning over evidence."
+  },
+  {
+   "type": "post-processing",
+   "text": "Q: \"what was the average amount spent by amazon on their three largest acquisitions to date?\" Gold: \"~$8.68 billion\". Evaluator: correct (max score 0.98). Standard RAG: \"To calculate the average amount spent on the three largest acquisitions, we need more specific information about which three acquisitions we\". Corrective RAG: \"To calculate the average amount spent on the three largest acquisitions, we need more specific information about which three acquisitions we\". Diagnosis: evaluator over-confident."
+  }
+ ],
+ "conclusion": [
+  "A training-free corrective-RAG pipeline with a Wikidata KG-lookup fallback was built and evaluated on 200 stratified CRAG questions with open models on a 4 GB GPU. Accuracy was 17.3 % without retrieval, 17.0 % with standard RAG and 18.0 % with corrective RAG (baseline: mean of 3 seeds; RAG methods: seed 0). The evaluator routed 17.5 % of questions to the KG, with the highest fallback rate on comparison questions.",
+  "The main finding is that the bottleneck is the evaluator, not the fallback: a relevance cross-encoder judges topical match and therefore rarely detects that on-topic pages lack the answer; and when the KG is used, top-1 entity linking and Wikidata's limited coverage of finance and recent sports facts limit gains. All objectives were met, including negative results, which are reported as measured. The approach costs nothing beyond a laptop GPU, supporting SDG 4 and SDG 9."
+ ],
+ "shots": {
+  "screenshots/cell_00.png": "Notebook setup \u2014 libraries, seed and GPU detected (executed output)",
+  "screenshots/cell_01.png": "Loading CRAG and the stratified 200-question sample by question type",
+  "screenshots/cell_05.png": "Retrieval metrics (Recall@5/10, MRR, NDCG@10) computed in the notebook",
+  "screenshots/cell_06.png": "Retrieval evaluator run: label counts and KG fallback rate",
+  "screenshots/cell_08.png": "KG-lookup fallback: Wikidata triples retrieved for an example question",
+  "screenshots/cell_10.png": "T1 computed in the notebook: accuracy, missing, hallucination, EM, F1 (mean \u00b1 std)"
+ },
+ "appendix_shots": {
+  "screenshots/cell_02.png": "Example CRAG record and its five search-result pages",
+  "screenshots/cell_03.png": "HTML parsing and chunking statistics",
+  "screenshots/cell_04.png": "BGE-small embedding and retrieval timing",
+  "screenshots/cell_07.png": "Generator loaded and sanity-checked",
+  "screenshots/cell_09.png": "Answer generation for the three methods and three seeds (timings)",
+  "screenshots/cell_11.png": "T2 evaluator label counts and fallback rate output",
+  "screenshots/cell_12.png": "Fallback rate and accuracy by question type (Variant analysis)",
+  "screenshots/cell_16.png": "Threshold sensitivity table",
+  "screenshots/cell_17.png": "Cost table: time and tokens per stage",
+  "screenshots/cell_18.png": "Results saved and failure cases printed"
+ }
+}

@@ -1,0 +1,4 @@
+,Accuracy %,Missing %,Hallucination %,CRAG score %,EM %,F1 %
+No retrieval  [BASELINE],17.3 ± 1.4,17.2 ± 0.3,65.5 ± 1.3,-48.2 ± 2.8,8.8 ± 0.6,15.1 ± 0.2
+Standard RAG (top-5),17.0 ± nan,11.5 ± nan,71.5 ± nan,-54.5 ± nan,7.0 ± nan,14.8 ± nan
+Corrective RAG + KG fallback,18.0 ± nan,13.5 ± nan,68.5 ± nan,-50.5 ± nan,7.5 ± nan,16.5 ± nan

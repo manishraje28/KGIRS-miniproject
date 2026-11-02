@@ -1,0 +1,9 @@
+qtype,n,fallback rate %,incorrect %,No retrieval acc %,Standard RAG (top-5) acc %,Corrective RAG + KG fallback acc %
+comparison,23,26.1,21.7,29.0 ± 9.1,21.7 ± nan,26.1 ± nan
+simple,56,23.2,14.3,7.7 ± 2.7,19.6 ± nan,19.6 ± nan
+false_premise,23,21.7,8.7,66.7 ± 5.0,21.7 ± nan,26.1 ± nan
+simple_w_condition,29,20.7,0.0,6.9 ± 3.4,17.2 ± nan,17.2 ± nan
+aggregation,24,12.5,4.2,4.2 ± 0.0,4.2 ± nan,4.2 ± nan
+multi-hop,18,11.1,5.6,9.3 ± 6.4,5.6 ± nan,5.6 ± nan
+set,18,0.0,0.0,16.7 ± 0.0,27.8 ± nan,27.8 ± nan
+post-processing,9,0.0,0.0,7.4 ± 6.4,11.1 ± nan,11.1 ± nan
