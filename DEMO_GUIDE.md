@@ -64,3 +64,28 @@ Hallucination: 65.5 / 71.5 / 68.5 %. Corrective RAG hallucinates less than stand
 - *Why 1 seed for RAG?* GPU time on a throttled 4 GB laptop GPU; stated as a limitation. Baseline has 3 seeds (std 1.4).
 - *What would you improve?* Better evaluator (check answer presence, LLM judge), better entity linking, tune thresholds on a dev split, use CRAG mock KG for finance/sports.
 - *SDG?* SDG 4 (low-cost assistant that says "I don't know" instead of hallucinating), SDG 9 (open, small-model AI on free hardware).
+
+## 6. Cell-by-cell script (what to click, what appears, what to say)
+
+| # | Cell (heading in notebook) | What the code does | Output you will see | What to say |
+|---|---|---|---|---|
+| 0 | Colab setup | Clones this repo, installs packages | (nothing / install logs) | "Makes the notebook run anywhere; it also brings the cached Wikidata responses." |
+| 1 | Setup | Imports, fixes seeds (42), detects GPU, names the 3 models | `device: cuda …` | "Free GPU, open models only: BGE-small embedder, BGE-reranker evaluator, Qwen2.5-1.5B (≤3B) generator." |
+| 2 | §1 Dataset | Downloads 2 CRAG subsets (272 q), stratified sample of 200 by question type | pool vs sample table; domain counts | "Stratified so all 8 question types are represented — needed for the by-type analysis." |
+| 3 | Example record | Prints one question and its 5 page titles | Oscar Best Actor 2019 → rami malek | "Each question comes with 5 real web pages — that is the retrieval corpus (CRAG Task 1)." |
+| 4 | §2 Parsing | HTML → clean text → 200-word chunks, 40 overlap | `chunks total=13036 mean/q=65.2` | "Overlap prevents an answer being split across chunk borders." |
+| 5 | Retrieval | BGE-small embeds chunks and query, cosine similarity, keep top-10 | timing | "Dense retrieval per question, over its own pages only." |
+| 6 | §3 Retrieval metrics | Chunk is relevant if it contains the gold answer; Recall@5/10, MRR, NDCG@10 | R@5 0.463, R@10 0.514, MRR 0.408, NDCG 0.335; answer in pages 0.565 | "43 % of answerable questions don't even have the answer in their pages — a hard ceiling for any RAG." |
+| 7 | §4 Evaluator | Cross-encoder scores top-5 chunks; max ≥0.60 correct, <0.15 incorrect, else ambiguous; drop chunks <0.15 (refinement) | 165 / 18 / 17, fallback 0.175 | "This is the corrective step. Same evaluator as my Primary partner; only 17.5 % go to the KG." |
+| 8 | §5 Generator | Loads Qwen 1.5B, defines batched generation + token counting | `['Paris']` | "Sanity check; I also count every prompt/generated token for the cost table." |
+| 9 | §6 KG lookup | LLM extracts entity names → Wikidata search → claims → readable triples → top-15 by similarity; cached | entity found 82.9 %; CLSK example | "My Variant. Free, structured, reproducible. The CLSK example is an entity-linking error — a stock ticker linked to a Dutch air-force command." |
+| 10 | §7 Generation | Builds prompts for 3 methods and generates answers | timings per method/seed | "Corrective prompt depends on the label: chunks / KG facts / both. Prompt says answer briefly, 'I don't know' if unsure, 'invalid question' for false premise." |
+| 11 | §8 Scoring → T1 | accurate / missing / hallucinated, CRAG score, EM, F1 | 17.3 / 17.0 / 18.0 % | "Corrective is best but by ~1 point — within noise. It hallucinates less than standard RAG. Honest negative result." |
+| 12 | T2 | Label counts + fallback rate + entity-found rate | table | "35 questions used the KG; Wikidata found an entity for 29." |
+| 13 | §9 By question type | Fallback rate and accuracy per type; accuracy per evaluator branch | T3 table | "Comparison: most fallback and biggest gain. False premise: no retrieval best — retrieved pages make the model accept the false premise." |
+| 14 | F1 | Bar chart accuracy by method | figure | "Baseline in grey; error bar = std over 3 seeds." |
+| 15 | F2 | Confusion matrix: evaluator label vs real retrieval quality | heatmap; precision 0.442, recall 0.890 | "Key insight: evaluator judges topic, not fact presence — 'correct' is right only 44 % of the time, so too few questions reach the KG." |
+| 16 | F3 | Accuracy bars + fallback-rate line per type | figure | "The Variant's main figure." |
+| 17 | §11 Thresholds | Label counts for other upper/lower thresholds | table | "Stricter threshold → more KG fallback. Thresholds fixed in advance, not tuned on test data." |
+| 18 | §12 Cost | Time and tokens per stage | table | "≈30 min total on a laptop GPU; generation dominates; corrective uses ~12 % fewer prompt tokens than standard RAG." |
+| 19 | §13 Save + failures | Writes all CSVs/JSON, prints failure cases | Millie Bobby Brown false premise; Djokovic clay slams (gold 3, answered 18) | "Failures: false premise accepted, and multi-hop reasoning — the model counted all slams, not clay." |
