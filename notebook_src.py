@@ -11,6 +11,14 @@
 # 6. Evaluate accuracy / hallucination / EM / F1, fallback rate and accuracy **by question type**, retrieval metrics, cost.
 
 # %%
+# --- Colab only: get the repo (code + cached Wikidata responses) and install packages ---
+import sys, os
+if "google.colab" in sys.modules and not os.path.exists("data/kg_cache.json"):
+    !git clone -q https://github.com/manishraje28/KGIRS-miniproject.git
+    %cd KGIRS-miniproject
+    !pip -q install sentence-transformers==5.1.2 transformers==4.57.1 accelerate beautifulsoup4 lxml seaborn
+
+# %%
 # --- Setup (Colab: uncomment the pip line) ---
 # !pip -q install sentence-transformers==5.1.2 transformers==4.57.1 accelerate rank_bm25 beautifulsoup4 lxml seaborn
 import os, re, json, bz2, time, random, string, collections, math
