@@ -6,7 +6,7 @@ On 200 stratified questions from the CRAG benchmark, the same retrieval evaluato
 but the corrective action is a **Wikidata knowledge-graph lookup**. The project compares no retrieval (baseline),
 standard RAG and corrective RAG, and reports fallback rate and accuracy **by question type**.
 
-**New here? Read [PROJECT_EXPLAINED.md](PROJECT_EXPLAINED.md)** — the whole project, every notebook cell and every report section explained in simple language. For the live demo see [DEMO_GUIDE.md](DEMO_GUIDE.md).
+**New here? Read [PROJECT_EXPLAINED.md](PROJECT_EXPLAINED.md)** — the whole project, every notebook cell and every report section explained in simple language. For the live demo with the report side by side, follow [DEMO_SCRIPT.md](DEMO_SCRIPT.md).
 
 ## Folder
 | Path | Content |
