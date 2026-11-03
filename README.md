@@ -1,6 +1,6 @@
 # 67_P3_Variant — Corrective RAG with a KG-Lookup Fallback on CRAG
 
-**Student:** Manish Raje · Roll 67 · T.E. COMP D17B · KGIRS Lab (26CMPE742) · Partner (Primary): Roll 12
+**Student:** Manish Raje · Roll 67 · T.E. COMP D17B · KGIRS Lab (26CMPE742) · Partner (Primary): Roll 66 (Akansha Zambare)
 
 On 200 stratified questions from the CRAG benchmark, the same retrieval evaluator as the Primary project is used,
 but the corrective action is a **Wikidata knowledge-graph lookup**. The project compares no retrieval (baseline),

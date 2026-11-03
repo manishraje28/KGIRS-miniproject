@@ -1,7 +1,7 @@
 # The Whole Project Explained — in Simple Language
 
 **Project:** P3 Corrective RAG — Variant · **Student:** Manish Raje, Roll 67, T.E. COMP D17B
-**Course:** Knowledge Graph and Information Retrieval Systems Lab (26CMPE742) · **Partner (Primary):** Roll 12
+**Course:** Knowledge Graph and Information Retrieval Systems Lab (26CMPE742) · **Partner (Primary):** Roll 66 (Akansha Zambare)
 
 This file explains *everything*: the idea, the words used, every notebook cell (what it does, what it prints, what that means), and every part of the report. Read it top to bottom once and you can explain the project to anyone.
 
@@ -87,7 +87,7 @@ In the original paper, "somewhere else" = a **web search**.
 
 From the course sheet:
 
-> **13 · P3 Corrective RAG · Variant (partner Roll 12):** *On 200 questions from the CRAG benchmark, build the same evaluator with a KG-lookup fallback. Compare fallback rate and accuracy by question type.*
+> **13 · P3 Corrective RAG · Variant (partner Roll 66 (Akansha Zambare)):** *On 200 questions from the CRAG benchmark, build the same evaluator with a KG-lookup fallback. Compare fallback rate and accuracy by question type.*
 
 Common rules I followed:
 | Rule | How I followed it |

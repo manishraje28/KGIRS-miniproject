@@ -4,7 +4,7 @@
 "RAG systems trust whatever the retriever returns, so when retrieval is bad the LLM hallucinates.
 **Corrective RAG** adds an *evaluator* that checks the retrieved passages and labels them **correct / ambiguous / incorrect**.
 In the original paper the fix for bad retrieval is a web search. In my **Variant**, the fix is a **knowledge-graph lookup in Wikidata**.
-My partner (Roll 12, Primary) runs the reference setup; I test whether the idea holds with a KG fallback on **200 CRAG questions**,
+My partner (Roll 66 (Akansha Zambare), Primary) runs the reference setup; I test whether the idea holds with a KG fallback on **200 CRAG questions**,
 and I compare **fallback rate and accuracy by question type**."
 
 ## 2. Pipeline (point at Figure 1 in the report)
