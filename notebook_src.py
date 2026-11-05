@@ -21,6 +21,7 @@ if "google.colab" in sys.modules and not os.path.exists("data/kg_cache.json"):
 # %%
 # --- Setup (Colab: uncomment the pip line) ---
 # !pip -q install sentence-transformers==5.1.2 transformers==4.57.1 accelerate rank_bm25 beautifulsoup4 lxml seaborn
+import warnings; warnings.filterwarnings("ignore")   # hide harmless library warnings
 import os, re, json, bz2, time, random, string, collections, math
 import numpy as np, pandas as pd, torch, requests
 import matplotlib.pyplot as plt, seaborn as sns
