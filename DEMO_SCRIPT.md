@@ -63,6 +63,11 @@
 📄 Appendix Figure A1, page 21.
 🗣️ "One example: the question, the correct answer, the date it was asked, its type, and the titles of its 5 web pages. These 5 pages are the only documents we can search for this question."
 
+### Cell 3b – Where the HTML content is *(run live, ~2 s — new cell right after the example)*
+🖥️ Output: page *Academy Award for Best Actor – Wikipedia*, `HTML size: 617663 characters`, then three blocks: **RAW HTML**, **CLEAN TEXT**, **FIRST CHUNK**.
+📄 Section 5.3 (page 9) describes this step.
+🗣️ "This shows what is inside one of the 5 pages. The raw HTML is over 6 lakh characters, mostly tags and styling — useless for the model. After removing scripts, menus and tags, we get clean readable text: about 11,000 words. That is cut into 200-word chunks; this is the first chunk the retriever will search."
+
 ### §2 Cell 4 – Parsing and chunking *(run live, ~1 min — talk while it runs)*
 🖥️ Output: `chunks total=13036 mean/q=65.2`.
 📄 Appendix Figure A2, page 21; method in Section 5.3, page 9.
