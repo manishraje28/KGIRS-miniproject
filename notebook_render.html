@@ -7991,6 +7991,76 @@ pages: ["LIST: Every actor that has won 'Best Actor' at the Academy A", 'Oscar B
 </div>
 </div>
 </div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=56d8900c">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="Where-the-web-page-content-is:-raw-HTML-%E2%86%92-clean-text-%E2%86%92-chunks">Where the web-page content is: raw HTML → clean text → chunks<a class="anchor-link" href="#Where-the-web-page-content-is:-raw-HTML-%E2%86%92-clean-text-%E2%86%92-chunks">¶</a></h3><p>Each CRAG question carries its 5 pages as <strong>raw HTML</strong> in <code>search_results[i]['page_result']</code>. This cell shows the first 600 characters of one page's HTML, the visible text after cleaning, and the first 200-word chunk that the retriever searches.</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=52b620e8">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">re</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">bs4</span><span class="w"> </span><span class="kn">import</span> <span class="n">BeautifulSoup</span>
+<span class="n">page</span> <span class="o">=</span> <span class="n">ex</span><span class="p">[</span><span class="s2">"search_results"</span><span class="p">][</span><span class="mi">2</span><span class="p">]</span>                               <span class="c1"># one of the 5 pages of the example question</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"PAGE :"</span><span class="p">,</span> <span class="n">page</span><span class="p">[</span><span class="s2">"page_name"</span><span class="p">]);</span> <span class="nb">print</span><span class="p">(</span><span class="s2">"URL  :"</span><span class="p">,</span> <span class="n">page</span><span class="p">[</span><span class="s2">"page_url"</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"HTML size:"</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">page</span><span class="p">[</span><span class="s2">"page_result"</span><span class="p">]),</span> <span class="s2">"characters</span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"----- RAW HTML (first 600 chars) -----"</span><span class="p">);</span> <span class="nb">print</span><span class="p">(</span><span class="n">page</span><span class="p">[</span><span class="s2">"page_result"</span><span class="p">][:</span><span class="mi">600</span><span class="p">])</span>
+<span class="n">soup</span> <span class="o">=</span> <span class="n">BeautifulSoup</span><span class="p">(</span><span class="n">page</span><span class="p">[</span><span class="s2">"page_result"</span><span class="p">],</span> <span class="s2">"lxml"</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">t</span> <span class="ow">in</span> <span class="n">soup</span><span class="p">([</span><span class="s2">"script"</span><span class="p">,</span> <span class="s2">"style"</span><span class="p">,</span> <span class="s2">"noscript"</span><span class="p">,</span> <span class="s2">"header"</span><span class="p">,</span> <span class="s2">"footer"</span><span class="p">,</span> <span class="s2">"nav"</span><span class="p">]):</span> <span class="n">t</span><span class="o">.</span><span class="n">decompose</span><span class="p">()</span>
+<span class="n">text</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="sa">r</span><span class="s2">"\s+"</span><span class="p">,</span> <span class="s2">" "</span><span class="p">,</span> <span class="n">soup</span><span class="o">.</span><span class="n">get_text</span><span class="p">(</span><span class="s2">" "</span><span class="p">))</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2">----- CLEAN TEXT (first 600 chars) -----"</span><span class="p">);</span> <span class="nb">print</span><span class="p">(</span><span class="n">text</span><span class="p">[:</span><span class="mi">600</span><span class="p">])</span>
+<span class="n">words</span> <span class="o">=</span> <span class="p">(</span><span class="n">page</span><span class="p">[</span><span class="s2">"page_snippet"</span><span class="p">]</span> <span class="o">+</span> <span class="s2">" "</span> <span class="o">+</span> <span class="n">text</span><span class="p">)</span><span class="o">.</span><span class="n">split</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="se">\n</span><span class="s2">clean text = </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">text</span><span class="o">.</span><span class="n">split</span><span class="p">())</span><span class="si">}</span><span class="s2"> words  -&gt;  about </span><span class="si">{</span><span class="nb">max</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="p">(</span><span class="nb">min</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">words</span><span class="p">),</span><span class="w"> </span><span class="mi">6000</span><span class="p">)</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">40</span><span class="p">)</span><span class="w"> </span><span class="o">//</span><span class="w"> </span><span class="mi">160</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span><span class="si">}</span><span class="s2"> chunks of 200 words"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2">----- FIRST CHUNK (what the retriever searches) -----"</span><span class="p">);</span> <span class="nb">print</span><span class="p">(</span><span class="n">page</span><span class="p">[</span><span class="s2">"page_name"</span><span class="p">]</span> <span class="o">+</span> <span class="s2">": "</span> <span class="o">+</span> <span class="s2">" "</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">words</span><span class="p">[:</span><span class="mi">200</span><span class="p">]))</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>PAGE : Academy Award for Best Actor - Wikipedia
+URL  : https://en.wikipedia.org/wiki/Academy_Award_for_Best_Actor
+HTML size: 617663 characters
+
+----- RAW HTML (first 600 chars) -----
+&lt;!DOCTYPE html&gt;
+&lt;html class="client-nojs vector-feature-language-in-header-enabled vector-feature-language-in-main-page-header-disabled vector-feature-sticky-header-disabled vector-feature-page-tools-pinned-disabled vector-feature-toc-pinned-clientpref-1 vector-feature-main-menu-pinned-disabled vector-feature-limited-width-clientpref-1 vector-feature-limited-width-content-enabled vector-feature-custom-font-size-clientpref-0 vector-feature-client-preferences-disabled vector-feature-client-prefs-pinned-disabled vector-feature-night-mode-disabled skin-night-mode-clientpref-0 vector-toc-available"
+</pre>
+</div>
+</div>
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>
+----- CLEAN TEXT (first 600 chars) -----
+Academy Award for Best Actor - Wikipedia Jump to content From Wikipedia, the free encyclopedia Award presented annually by the Academy of Motion Picture Arts and Sciences Academy Award for Best Actor The 2023 recipient: Cillian Murphy Awarded for Best Performance by an Actor in a Leading Role Country United States Presented by Academy of Motion Picture Arts and Sciences (AMPAS) First awarded 1929 Most recent winner Cillian Murphy , Oppenheimer ( 2024 ) Most awards Daniel Day-Lewis (3) Most nominations Laurence Olivier and Spencer Tracy (9) Website oscars .org The Academy Award for Best Actor i
+
+clean text = 11098 words  -&gt;  about 38 chunks of 200 words
+
+----- FIRST CHUNK (what the retriever searches) -----
+Academy Award for Best Actor - Wikipedia: The record for most wins is three, held by &lt;strong&gt;Daniel Day-Lewis&lt;/strong&gt;, while nine other actors have won twice. The record for most nominations is nine, jointly held by Spencer Tracy and Laurence Olivier. James Dean remains the only actor to have been posthumously nominated for this award more than once.The record for most wins is three, held by Daniel Day-Lewis, while nine other actors have won twice. The record for most nominations is nine, jointly held by Spencer Tracy and Laurence Olivier. James Dean remains the only actor to have been posthumously nominated for this award more than once. At the 5th Academy Awards, Fredric March finished one vote ahead of Wallace Beery; under the rules of the time, this meant both actors were awarded, in this category's only tie. A^ : According to longstanding Hollywood legend, reported by Susan Orlean, Rin Tin Tin actually received the most Best Actor votes, but the Academy (not wishing to give the first award to a dog) refactored the votes to ensure that Jannings won. ... ^ :The Circus originally received three nominations: Best Director (Comedy Picture), Best Actor, and Best Writing (Original Story) – for Charles Chaplin. However, the Academy subsequently decided
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=977e5a31">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">

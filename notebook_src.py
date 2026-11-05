@@ -78,6 +78,25 @@ print({k: v for k, v in ex.items() if k != "search_results"})
 print("pages:", [p["page_name"][:60] for p in ex["search_results"]])
 
 # %% [markdown]
+# ### Where the web-page content is: raw HTML → clean text → chunks
+# Each CRAG question carries its 5 pages as **raw HTML** in `search_results[i]['page_result']`.
+
+# %%
+import re
+from bs4 import BeautifulSoup
+page = ex["search_results"][2]                               # one of the 5 pages of the example question
+print("PAGE :", page["page_name"]); print("URL  :", page["page_url"])
+print("HTML size:", len(page["page_result"]), "characters\n")
+print("----- RAW HTML (first 600 chars) -----"); print(page["page_result"][:600])
+soup = BeautifulSoup(page["page_result"], "lxml")
+for t in soup(["script", "style", "noscript", "header", "footer", "nav"]): t.decompose()
+text = re.sub(r"\s+", " ", soup.get_text(" ")).strip()
+print("\n----- CLEAN TEXT (first 600 chars) -----"); print(text[:600])
+words = (page["page_snippet"] + " " + text).split()
+print(f"\nclean text = {len(text.split())} words  ->  about {max(1, (min(len(words), 6000) - 40) // 160 + 1)} chunks of 200 words")
+print("\n----- FIRST CHUNK (what the retriever searches) -----"); print(page["page_name"] + ": " + " ".join(words[:200]))
+
+# %% [markdown]
 # ## 2. Page parsing, chunking and dense retrieval (BGE-small)
 # HTML → visible text → 200-word chunks with 40-word overlap. Retrieval is per question over its own 5 pages (CRAG Task 1 setting).
 
